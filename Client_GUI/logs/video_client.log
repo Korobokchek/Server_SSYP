@@ -1,0 +1,138 @@
+2025-07-17 12:03:08,897 - VideoClient - INFO - Starting application
+2025-07-17 12:03:09,171 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-17 12:03:09,231 - VideoClient - INFO - VideoPlayer initialized
+2025-07-17 12:03:09,264 - VideoClient - DEBUG - UI setup completed
+2025-07-17 12:03:09,264 - VideoClient - INFO - UI initialized
+2025-07-17 12:03:09,264 - VideoClient - INFO - VideoClient initialized
+2025-07-17 12:03:09,322 - VideoClient - INFO - Application started successfully
+2025-07-17 12:03:14,743 - VideoClient - INFO - Successfully connected to server
+2025-07-17 12:03:14,744 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-17 12:03:14,745 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 12:03:14,745 - VideoClient - INFO - Receiving 2 video entries
+2025-07-17 12:03:14,745 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 12:03:14,745 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 12:03:14,745 - VideoClient - DEBUG - Received 55 bytes
+2025-07-17 12:03:14,745 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-17 12:03:14,745 - VideoClient - DEBUG - Received video info: ID=1, Title=Test Video 1
+2025-07-17 12:03:14,746 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 12:03:14,746 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 12:03:14,746 - VideoClient - DEBUG - Received 64 bytes
+2025-07-17 12:03:14,746 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-17 12:03:14,746 - VideoClient - DEBUG - Received video info: ID=2, Title=Demo Video
+2025-07-17 12:03:17,322 - VideoClient - DEBUG - Sent 10 bytes
+2025-07-17 12:03:17,323 - VideoClient - ERROR - Failed to receive data: [Errno 54] Connection reset by peer
+2025-07-17 12:03:17,323 - VideoClient - ERROR - Error getting video segment: [Errno 54] Connection reset by peer
+2025-07-17 12:58:52,234 - VideoClient - INFO - Starting application
+2025-07-17 12:58:52,474 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-17 12:58:52,510 - VideoClient - INFO - VideoPlayer initialized
+2025-07-17 12:58:52,540 - VideoClient - DEBUG - UI setup completed
+2025-07-17 12:58:52,540 - VideoClient - INFO - UI initialized
+2025-07-17 12:58:52,541 - VideoClient - INFO - VideoClient initialized
+2025-07-17 12:58:52,624 - VideoClient - INFO - Application started successfully
+2025-07-17 12:58:57,437 - VideoClient - INFO - Successfully connected to server
+2025-07-17 12:58:57,439 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-17 12:58:57,439 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 12:58:57,439 - VideoClient - INFO - Receiving 2 video entries
+2025-07-17 12:58:57,440 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 12:58:57,440 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 12:58:57,440 - VideoClient - DEBUG - Received 55 bytes
+2025-07-17 12:58:57,440 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-17 12:58:57,440 - VideoClient - DEBUG - Received video info: ID=1, Title=Test Video 1
+2025-07-17 12:58:57,440 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 12:58:57,440 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 12:58:57,440 - VideoClient - DEBUG - Received 64 bytes
+2025-07-17 12:58:57,440 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-17 12:58:57,441 - VideoClient - DEBUG - Received video info: ID=2, Title=Demo Video
+2025-07-17 13:00:57,031 - VideoClient - INFO - Starting application
+2025-07-17 13:00:57,217 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-17 13:00:57,231 - VideoClient - INFO - VideoPlayer initialized
+2025-07-17 13:00:57,271 - VideoClient - DEBUG - UI setup completed
+2025-07-17 13:00:57,271 - VideoClient - INFO - UI initialized
+2025-07-17 13:00:57,271 - VideoClient - INFO - VideoClient initialized
+2025-07-17 13:00:57,306 - VideoClient - INFO - Application started successfully
+2025-07-17 13:01:03,874 - VideoClient - INFO - Successfully connected to server
+2025-07-17 13:01:03,876 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-17 13:01:03,876 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:01:03,876 - VideoClient - INFO - Receiving 2 video entries
+2025-07-17 13:01:03,876 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:01:03,876 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:01:03,876 - VideoClient - DEBUG - Received 55 bytes
+2025-07-17 13:01:03,876 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-17 13:01:03,876 - VideoClient - DEBUG - Received video info: ID=1, Title=Test Video 1
+2025-07-17 13:01:03,877 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:01:03,877 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:01:03,877 - VideoClient - DEBUG - Received 64 bytes
+2025-07-17 13:01:03,877 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-17 13:01:03,877 - VideoClient - DEBUG - Received video info: ID=2, Title=Demo Video
+2025-07-17 13:01:14,806 - VideoClient - DEBUG - Sent 10 bytes
+2025-07-17 13:01:14,806 - VideoClient - ERROR - Failed to receive data: [Errno 54] Connection reset by peer
+2025-07-17 13:01:14,806 - VideoClient - ERROR - Error getting video segment: [Errno 54] Connection reset by peer
+2025-07-17 13:23:17,192 - VideoClient - INFO - Starting application
+2025-07-17 13:23:17,433 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-17 13:23:17,491 - VideoClient - INFO - VideoPlayer initialized
+2025-07-17 13:23:17,528 - VideoClient - DEBUG - UI setup completed
+2025-07-17 13:23:17,529 - VideoClient - INFO - UI initialized
+2025-07-17 13:23:17,529 - VideoClient - INFO - VideoClient initialized
+2025-07-17 13:23:17,585 - VideoClient - INFO - Application started successfully
+2025-07-17 13:23:19,672 - VideoClient - INFO - Successfully connected to server
+2025-07-17 13:23:19,673 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-17 13:23:19,674 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:23:19,675 - VideoClient - INFO - Receiving 2 video entries
+2025-07-17 13:23:19,675 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:23:19,675 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:23:19,675 - VideoClient - DEBUG - Received 55 bytes
+2025-07-17 13:23:19,675 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-17 13:23:19,675 - VideoClient - DEBUG - Received video info: ID=1, Title=Test Video 1
+2025-07-17 13:23:19,675 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:23:19,675 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:23:19,675 - VideoClient - DEBUG - Received 64 bytes
+2025-07-17 13:23:19,675 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-17 13:23:19,676 - VideoClient - DEBUG - Received video info: ID=2, Title=Demo Video
+2025-07-17 13:23:22,803 - VideoClient - DEBUG - Sent 10 bytes
+2025-07-17 13:23:22,803 - VideoClient - ERROR - Failed to receive data: [Errno 54] Connection reset by peer
+2025-07-17 13:23:22,803 - VideoClient - ERROR - Error getting video segment: [Errno 54] Connection reset by peer
+2025-07-17 13:23:24,071 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:23:24,072 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:23:24,753 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:23:24,754 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:23:25,204 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:23:25,204 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:23:25,671 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:23:25,672 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:23:26,070 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:23:26,071 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:24:12,978 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:24:12,980 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:24:13,160 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:24:13,160 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:24:13,310 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:24:13,311 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:24:13,444 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:24:13,444 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:24:13,593 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:24:13,594 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:24:13,727 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:24:13,727 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:24:14,227 - VideoClient - ERROR - Failed to send data: [Errno 32] Broken pipe
+2025-07-17 13:24:14,227 - VideoClient - ERROR - Error getting video segment: [Errno 32] Broken pipe
+2025-07-17 13:24:54,197 - VideoClient - INFO - Starting application
+2025-07-17 13:24:54,330 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-17 13:24:54,342 - VideoClient - INFO - VideoPlayer initialized
+2025-07-17 13:24:54,380 - VideoClient - DEBUG - UI setup completed
+2025-07-17 13:24:54,380 - VideoClient - INFO - UI initialized
+2025-07-17 13:24:54,380 - VideoClient - INFO - VideoClient initialized
+2025-07-17 13:24:54,428 - VideoClient - INFO - Application started successfully
+2025-07-17 13:25:03,261 - VideoClient - INFO - Successfully connected to server
+2025-07-17 13:25:03,262 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-17 13:25:03,263 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:25:03,263 - VideoClient - INFO - Receiving 2 video entries
+2025-07-17 13:25:03,263 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:25:03,263 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:25:03,263 - VideoClient - DEBUG - Received 55 bytes
+2025-07-17 13:25:03,263 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-17 13:25:03,263 - VideoClient - DEBUG - Received video info: ID=1, Title=Test Video 1
+2025-07-17 13:25:03,263 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:25:03,263 - VideoClient - DEBUG - Received 4 bytes
+2025-07-17 13:25:03,263 - VideoClient - DEBUG - Received 64 bytes
+2025-07-17 13:25:03,263 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-17 13:25:03,263 - VideoClient - DEBUG - Received video info: ID=2, Title=Demo Video
