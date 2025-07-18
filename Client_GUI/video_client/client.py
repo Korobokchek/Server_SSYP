@@ -29,6 +29,7 @@ class VideoClient:
 
     def _connect_signals(self):
         self.ui.connect_btn.clicked.connect(self.connect_to_server)
+        self.ui.disconnect_btn.clicked.connect(self.disconnect_to_server)
         self.ui.play_btn.clicked.connect(self.play_video)
         self.ui.pause_btn.clicked.connect(self.pause_video)
         self.ui.stop_btn.clicked.connect(self.stop_video)
@@ -41,6 +42,12 @@ class VideoClient:
                 self.load_video_list()
         except Exception as e:
             QMessageBox.critical(self.ui.main_widget, "Error", f"Connection failed: {str(e)}")
+    def disconnect_to_server(self):
+        try:
+            self.network.disconnect()
+            self.ui.video_list_widget.clear()
+        except Exception as e:
+            QMessageBox.critical(self.ui.main_widget, "Error", f"Disconnection failed: {str(e)}")
 
     def load_video_list(self):
         try:
@@ -97,6 +104,6 @@ class VideoClient:
         self.ui.progress_slider.setValue(0)
 
     def on_player_state_changed(self, state):
-        self.ui.play_btn.setEnabled(state != QMediaPlayer.PlayingState)
+        self.ui.play_btn.setEnabled(state == QMediaPlayer.PlayingState)
         self.ui.pause_btn.setEnabled(state == QMediaPlayer.PlayingState)
-        self.ui.stop_btn.setEnabled(state != QMediaPlayer.StoppedState)
+        self.ui.stop_btn.setEnabled(state == QMediaPlayer.StoppedState)

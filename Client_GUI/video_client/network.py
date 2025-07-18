@@ -12,6 +12,7 @@ class NetworkClient:
         self.token = None
         logger.info(f"Initializing NetworkClient for {host}:{port}")
 
+
     def connect(self):
         try:
             self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

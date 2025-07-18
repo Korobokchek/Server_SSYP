@@ -15,6 +15,7 @@ class VideoInfo:
     @classmethod
     def from_bytes(cls, data):
         try:
+            # TODO: it's required to cover this code with unit tests. You can use pytest
             offset = 0
             segment_amount = struct.unpack_from('!I', data, offset)[0]
             offset += 4
@@ -46,6 +47,7 @@ class VideoInfo:
             raise
 
     def to_bytes(self):
+        # TODO: it's good to cover this function as well
         try:
             author_bytes = self.author.encode('utf-8')
             title_bytes = self.title.encode('utf-8')

@@ -10,6 +10,7 @@ class VideoPlayerUI:
         # Инициализация всех виджетов как None
         self.main_widget = None  # Главный виджет-контейнер
         self.connect_btn = None  # Кнопка подключения к серверу
+        self.disconnect_btn = None # Кнопка отключения от сервера
         self.server_input = None  # Поле ввода адреса сервера
         self.video_list_widget = None  # Список доступных видео
         self.video_info_label = None  # Метка с информацией о видео
@@ -34,8 +35,10 @@ class VideoPlayerUI:
             self.connection_layout = QHBoxLayout()  # Горизонтальный макет
             self.server_input = QLineEdit("localhost:12345")  # Поле ввода адреса
             self.connect_btn = QPushButton("Подключиться")  # Кнопка подключения
+            self.disconnect_btn = QPushButton("Отключиться")
             self.connection_layout.addWidget(self.server_input)
             self.connection_layout.addWidget(self.connect_btn)
+            self.connection_layout.addWidget(self.disconnect_btn)
 
             # 2. Заголовок списка видео (новая строка)
             self.video_list_label = QLabel("Доступные видео:")
