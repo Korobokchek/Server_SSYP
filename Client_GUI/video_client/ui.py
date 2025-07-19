@@ -1,122 +1,215 @@
-from PyQt5.QtWidgets import (QVBoxLayout, QHBoxLayout, QWidget, QPushButton,
-                             QSlider, QLabel, QListWidget, QLineEdit)
+from PyQt5.QtWidgets import (QHBoxLayout, QVBoxLayout, QWidget, QPushButton,
+                             QSlider, QLabel, QListWidget, QDialog,
+                             QDialogButtonBox, QFrame, QLineEdit, QFormLayout)
 from PyQt5.QtCore import Qt
-from .logger import logger
 
 
 class VideoPlayerUI:
     def __init__(self):
-        """Инициализация пользовательского интерфейса видеоплеера"""
-        # Инициализация всех виджетов как None
-        self.main_widget = None  # Главный виджет-контейнер
-        self.connect_btn = None  # Кнопка подключения к серверу
-        self.disconnect_btn = None # Кнопка отключения от сервера
-        self.server_input = None  # Поле ввода адреса сервера
-        self.video_list_widget = None  # Список доступных видео
-        self.video_info_label = None  # Метка с информацией о видео
-        self.play_btn = None  # Кнопка воспроизведения
-        self.pause_btn = None  # Кнопка паузы
-        self.stop_btn = None  # Кнопка остановки
-        self.progress_slider = None  # Слайдер прогресса воспроизведения
-        self.time_label = None  # Метка с временем воспроизведения
-        self.video_list_label = None  # Новая метка для заголовка списка видео
-
-        self.setup_ui()  # Настройка интерфейса
-        logger.info("UI initialized")  # Логирование инициализации
+        self.main_widget = None
+        self.setup_ui()
 
     def setup_ui(self):
-        """Создание и компоновка всех элементов интерфейса"""
-        try:
-            # Создаем главный виджет и основной макет
-            self.main_widget = QWidget()
-            self.layout = QVBoxLayout()  # Вертикальный макет
+        self.main_widget = QWidget()
+        self.main_widget.setMinimumSize(1000, 600)
 
-            # 1. Панель подключения к серверу
-            self.connection_layout = QHBoxLayout()  # Горизонтальный макет
-            self.server_input = QLineEdit("localhost:12345")  # Поле ввода адреса
-            self.connect_btn = QPushButton("Подключиться")  # Кнопка подключения
-            self.disconnect_btn = QPushButton("Отключиться")
-            self.connection_layout.addWidget(self.server_input)
-            self.connection_layout.addWidget(self.connect_btn)
-            self.connection_layout.addWidget(self.disconnect_btn)
+        main_layout = QVBoxLayout(self.main_widget)
+        main_layout.setContentsMargins(10, 10, 10, 10)
+        main_layout.setSpacing(10)
 
-            # 2. Заголовок списка видео (новая строка)
-            self.video_list_label = QLabel("Доступные видео:")
-            self.video_list_label.setStyleSheet("font-weight: bold;")
+        # Connection panel
+        self._setup_connection_panel(main_layout)
 
-            # 3. Список доступных видео
-            self.video_list_widget = QListWidget()  # Виджет списка
-            self.video_list_widget.setMinimumHeight(150)  # Минимальная высота
+        # Content area
+        content_widget = QWidget()
+        content_layout = QHBoxLayout(content_widget)
+        content_layout.setContentsMargins(0, 0, 0, 0)
+        content_layout.setSpacing(10)
 
-            # 4. Информация о выбранном видео
-            self.video_info_label = QLabel("Выберите видео из списка")
-            self.video_info_label.setWordWrap(True)  # Перенос текста
-            self.video_info_label.setStyleSheet("padding: 5px;")
+        # Left panel (video list)
+        self._setup_video_list_panel(content_layout)
 
-            # 5. Элементы управления плеером
-            self.control_layout = QHBoxLayout()
-            self.play_btn = QPushButton("Воспроизвести")
-            self.pause_btn = QPushButton("Пауза")
-            self.stop_btn = QPushButton("Стоп")
+        # Right panel (player)
+        self._setup_player_panel(content_layout)
 
-            # Добавляем кнопки в горизонтальный макет
-            self.control_layout.addWidget(self.play_btn)
-            self.control_layout.addWidget(self.pause_btn)
-            self.control_layout.addWidget(self.stop_btn)
+        main_layout.addWidget(content_widget)
 
-            # 6. Слайдер прогресса воспроизведения
-            self.progress_slider = QSlider(Qt.Horizontal)  # Горизонтальный слайдер
-            self.progress_slider.setMinimum(0)
+        # Status label
+        self.status_label = QLabel("Готов к подключению")
+        self.status_label.setAlignment(Qt.AlignCenter)
+        main_layout.addWidget(self.status_label)
 
-            # 7. Метка времени (текущее/общее)
-            self.time_label = QLabel("00:00 / 00:00")
-            self.time_label.setAlignment(Qt.AlignCenter)  # Выравнивание по центру
+    def _setup_connection_panel(self, parent_layout):
+        panel = QFrame()
+        panel.setStyleSheet("background-color: #f8f8f8; border-radius: 8px; padding: 10px;")
 
+        layout = QHBoxLayout(panel)
+        layout.setSpacing(10)
 
+        self.server_input = QLineEdit("localhost:12345")
+        self.server_input.setMinimumWidth(200)
 
+        self.connect_btn = QPushButton("Подключиться")
+        self.disconnect_btn = QPushButton("Отключиться")
+        self.login_btn = QPushButton("Войти")
 
-            # Сборка интерфейса (добавление всех элементов в основной макет)
-            self.layout.addLayout(self.connection_layout)  # Панель подключения
-            self.layout.addWidget(self.video_list_label)  # Заголовок списка
-            self.layout.addWidget(self.video_list_widget)  # Сам список видео
-            self.layout.addWidget(self.video_info_label)  # Информация о видео
-            self.layout.addWidget(self.progress_slider)  # Слайдер прогресса
-            self.layout.addWidget(self.time_label)  # Временная метка
-            self.layout.addLayout(self.control_layout)  # Панель управления
-
-
-
-
-            # Установка основного макета для главного виджета
-            self.main_widget.setLayout(self.layout)
-            logger.debug("UI setup completed")  # Логирование успешной настройки
-
-        except Exception as e:
-            logger.critical(f"Failed to setup UI: {str(e)}")  # Логирование ошибок
-            raise  # Повторно вызываем исключение
-
-    def update_controls(self, state):
+        btn_style = """
+            QPushButton {
+                background-color: #ffffff;
+                color: #333333;
+                border: 1px solid #dddddd;
+                border-radius: 6px;
+                padding: 8px 12px;
+                min-width: 100px;
+                min-height: 30px;
+            }
+            QPushButton:hover {
+                background-color: #f0f0f0;
+            }
+            QPushButton:disabled {
+                color: #aaaaaa;
+            }
         """
-        Обновление состояния кнопок управления в зависимости от состояния плеера
-        :param state: Текущее состояние медиаплеера (Playing, Paused, Stopped)
-        """
-        from PyQt5.QtMultimedia import QMediaPlayer
-        # Воспроизведение доступно, если плеер не в состоянии Playing
-        self.play_btn.setEnabled(state != QMediaPlayer.PlayingState)
-        # Пауза доступна только при воспроизведении
-        self.pause_btn.setEnabled(state == QMediaPlayer.PlayingState)
-        # Стоп доступен, если плеер не в состоянии Stopped
-        self.stop_btn.setEnabled(state != QMediaPlayer.StoppedState)
-        logger.debug(f"Updated controls for state: {state}")
 
-    def update_time(self, current_time, duration):
-        """
-        Обновление временных меток
-        :param current_time: Текущая позиция в миллисекундах
-        :param duration: Общая длительность в миллисекундах
-        """
-        # Форматирование времени в MM:SS
-        time_str = (f"{int(current_time // 60000):02d}:{int((current_time % 60000) / 1000):02d} / "
-                    f"{int(duration // 60000):02d}:{int((duration % 60000) / 1000):02d}")
-        self.time_label.setText(time_str)
-        logger.debug(f"Updated time display: {time_str}")
+        self.connect_btn.setStyleSheet(btn_style)
+        self.disconnect_btn.setStyleSheet(btn_style)
+        self.login_btn.setStyleSheet(btn_style)
+        self.disconnect_btn.setEnabled(False)
+        self.login_btn.setEnabled(False)
+
+        layout.addWidget(QLabel("Сервер:"))
+        layout.addWidget(self.server_input)
+        layout.addWidget(self.connect_btn)
+        layout.addWidget(self.disconnect_btn)
+        layout.addWidget(self.login_btn)
+
+        parent_layout.addWidget(panel)
+
+    def _setup_video_list_panel(self, parent_layout):
+        panel = QFrame()
+        panel.setStyleSheet("background-color: #ffffff; border-radius: 8px;")
+        panel.setMinimumWidth(300)
+
+        layout = QVBoxLayout(panel)
+        layout.setContentsMargins(10, 10, 10, 10)
+        layout.setSpacing(10)
+
+        self.video_list_label = QLabel("Доступные видео")
+        layout.addWidget(self.video_list_label)
+
+        self.video_list_widget = QListWidget()
+        self.video_list_widget.setStyleSheet("""
+            QListWidget {
+                border: 1px solid #dddddd;
+                font-size: 14px;
+            }
+            QListWidget::item {
+                padding: 10px;
+                border-bottom: 1px solid #f0f0f0;
+            }
+        """)
+
+        self.video_info_label = QLabel("Выберите видео из списка")
+        self.video_info_label.setWordWrap(True)
+
+        layout.addWidget(self.video_list_widget)
+        layout.addWidget(self.video_info_label)
+        parent_layout.addWidget(panel)
+
+    def _setup_player_panel(self, parent_layout):
+        panel = QFrame()
+        panel.setStyleSheet("background-color: #ffffff; border-radius: 8px;")
+
+        layout = QVBoxLayout(panel)
+        layout.setContentsMargins(10, 10, 10, 10)
+        layout.setSpacing(10)
+
+        # Video widget container
+        self.video_widget = QWidget()
+        self.video_widget.setLayout(QVBoxLayout())
+        self.video_widget.layout().setContentsMargins(0, 0, 0, 0)
+        layout.addWidget(self.video_widget)
+
+        # Controls
+        controls_layout = QHBoxLayout()
+        self.play_btn = QPushButton("▶")
+        self.pause_btn = QPushButton("⏸")
+        self.stop_btn = QPushButton("⏹")
+
+        controls_layout.addWidget(self.play_btn)
+        controls_layout.addWidget(self.pause_btn)
+        controls_layout.addWidget(self.stop_btn)
+        layout.addLayout(controls_layout)
+
+        # Progress bar
+        self.progress_slider = QSlider(Qt.Horizontal)
+        self.progress_slider.setStyleSheet("""
+            QSlider::groove:horizontal {
+                height: 4px;
+                background: #e0e0e0;
+            }
+            QSlider::handle:horizontal {
+                width: 14px;
+                height: 14px;
+                margin: -5px 0;
+                background: #555555;
+                border-radius: 7px;
+            }
+        """)
+        layout.addWidget(self.progress_slider)
+
+        # Time labels
+        time_layout = QHBoxLayout()
+        self.current_time = QLabel("00:00")
+        self.duration = QLabel("00:00")
+
+        time_layout.addWidget(self.current_time)
+        time_layout.addStretch()
+        time_layout.addWidget(self.duration)
+
+        layout.addLayout(time_layout)
+        parent_layout.addWidget(panel, stretch=1)
+
+    def set_connection_state(self, connected):
+        self.connect_btn.setEnabled(not connected)
+        self.disconnect_btn.setEnabled(connected)
+        self.login_btn.setEnabled(connected)
+
+    def set_auth_state(self, authenticated):
+        self.login_btn.setText("Выйти" if authenticated else "Войти")
+
+
+class LoginDialog(QDialog):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle("Авторизация")
+        self.setFixedSize(400, 250)
+
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(30, 30, 30, 30)
+
+        form_layout = QFormLayout()
+        self.username_input = QLineEdit()
+        self.username_input.setPlaceholderText("Введите логин")
+        self.password_input = QLineEdit()
+        self.password_input.setPlaceholderText("Введите пароль")
+        self.password_input.setEchoMode(QLineEdit.Password)
+
+        form_layout.addRow("Логин:", self.username_input)
+        form_layout.addRow("Пароль:", self.password_input)
+
+        buttons = QDialogButtonBox(
+            QDialogButtonBox.Ok | QDialogButtonBox.Cancel,
+            Qt.Horizontal, self
+        )
+        buttons.button(QDialogButtonBox.Ok).setText("Войти")
+        buttons.button(QDialogButtonBox.Cancel).setText("Отмена")
+
+        layout.addLayout(form_layout)
+        layout.addWidget(buttons)
+
+        buttons.accepted.connect(self.accept)
+        buttons.rejected.connect(self.reject)
+
+    def get_credentials(self):
+        return (self.username_input.text(), self.password_input.text())

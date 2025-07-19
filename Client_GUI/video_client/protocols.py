@@ -14,6 +14,7 @@ class VideoInfo:
 
     @classmethod
     def from_bytes(cls, data):
+        #парсинг данных о ввидео
         try:
             # TODO: it's required to cover this code with unit tests. You can use pytest
             offset = 0
@@ -47,6 +48,7 @@ class VideoInfo:
             raise
 
     def to_bytes(self):
+        #запрос на сегмент видео
         # TODO: it's good to cover this function as well
         try:
             author_bytes = self.author.encode('utf-8')

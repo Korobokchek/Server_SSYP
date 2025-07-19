@@ -292,3 +292,788 @@
 2025-07-18 11:45:14,804 - VideoClient - DEBUG - Sent 10 bytes
 2025-07-18 11:45:14,806 - VideoClient - ERROR - Failed to receive data: [Errno 54] Connection reset by peer
 2025-07-18 11:45:14,806 - VideoClient - ERROR - Error getting video segment: [Errno 54] Connection reset by peer
+2025-07-18 11:50:10,978 - VideoClient - INFO - Successfully connected to server
+2025-07-18 11:50:10,980 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-18 11:50:10,982 - VideoClient - DEBUG - Received 4 bytes
+2025-07-18 11:50:10,982 - VideoClient - INFO - Receiving 2 video entries
+2025-07-18 11:50:10,982 - VideoClient - DEBUG - Received 4 bytes
+2025-07-18 11:50:10,982 - VideoClient - DEBUG - Received 4 bytes
+2025-07-18 11:50:10,982 - VideoClient - DEBUG - Received 55 bytes
+2025-07-18 11:50:10,982 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-18 11:50:10,982 - VideoClient - DEBUG - Received video info: ID=1, Title=Test Video 1
+2025-07-18 11:50:10,982 - VideoClient - DEBUG - Received 4 bytes
+2025-07-18 11:50:10,982 - VideoClient - DEBUG - Received 4 bytes
+2025-07-18 11:50:10,983 - VideoClient - DEBUG - Received 64 bytes
+2025-07-18 11:50:10,983 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-18 11:50:10,983 - VideoClient - DEBUG - Received video info: ID=2, Title=Demo Video
+2025-07-18 11:50:21,436 - VideoClient - INFO - Successfully connected to server
+2025-07-18 11:50:21,437 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-18 11:50:21,437 - VideoClient - DEBUG - Received 4 bytes
+2025-07-18 11:50:21,437 - VideoClient - INFO - Receiving 2 video entries
+2025-07-18 11:50:21,437 - VideoClient - DEBUG - Received 4 bytes
+2025-07-18 11:50:21,437 - VideoClient - DEBUG - Received 4 bytes
+2025-07-18 11:50:21,437 - VideoClient - DEBUG - Received 55 bytes
+2025-07-18 11:50:21,438 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-18 11:50:21,438 - VideoClient - DEBUG - Received video info: ID=1, Title=Test Video 1
+2025-07-18 11:50:21,438 - VideoClient - DEBUG - Received 4 bytes
+2025-07-18 11:50:21,438 - VideoClient - DEBUG - Received 4 bytes
+2025-07-18 11:50:21,438 - VideoClient - DEBUG - Received 64 bytes
+2025-07-18 11:50:21,438 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-18 11:50:21,438 - VideoClient - DEBUG - Received video info: ID=2, Title=Demo Video
+2025-07-18 11:50:22,503 - VideoClient - INFO - Disconnected from server
+2025-07-19 10:26:09,283 - VideoClient - DEBUG - Created VideoInfo: Test Video by Test Author
+2025-07-19 10:26:09,293 - VideoClient - DEBUG - Created VideoInfo:  by 
+2025-07-19 10:26:09,295 - VideoClient - DEBUG - Created VideoInfo: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB by AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+2025-07-19 10:26:09,296 - VideoClient - ERROR - Failed to parse VideoInfo: unpack_from requires a buffer of at least 4 bytes for unpacking 4 bytes at offset 0 (actual buffer size is 0)
+2025-07-19 10:26:09,297 - VideoClient - ERROR - Failed to parse VideoInfo: unpack_from requires a buffer of at least 10 bytes for unpacking 4 bytes at offset 6 (actual buffer size is 7)
+2025-07-19 10:26:09,297 - VideoClient - ERROR - Failed to parse VideoInfo: unpack_from requires a buffer of at least 24 bytes for unpacking 4 bytes at offset 20 (actual buffer size is 15)
+2025-07-19 10:30:02,999 - VideoClient - INFO - Starting application
+2025-07-19 10:30:03,260 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-19 10:30:03,327 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 10:30:03,367 - VideoClient - DEBUG - UI setup completed
+2025-07-19 10:30:03,367 - VideoClient - INFO - UI initialized
+2025-07-19 10:30:03,367 - VideoClient - INFO - VideoClient initialized
+2025-07-19 10:30:03,426 - VideoClient - INFO - Application started successfully
+2025-07-19 10:36:00,123 - VideoClient - INFO - Starting application
+2025-07-19 10:36:00,394 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 10:36:00,463 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 10:36:00,507 - VideoClient - DEBUG - UI setup completed
+2025-07-19 10:36:00,507 - VideoClient - INFO - UI initialized
+2025-07-19 10:36:00,509 - VideoClient - INFO - VideoClient initialized
+2025-07-19 10:36:00,573 - VideoClient - INFO - Application started successfully
+2025-07-19 10:36:08,201 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:36:10,414 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:04,932 - VideoClient - INFO - Starting application
+2025-07-19 10:38:05,049 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 10:38:05,059 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 10:38:05,079 - VideoClient - DEBUG - UI setup completed
+2025-07-19 10:38:05,079 - VideoClient - INFO - UI initialized
+2025-07-19 10:38:05,079 - VideoClient - INFO - VideoClient initialized
+2025-07-19 10:38:05,110 - VideoClient - INFO - Application started successfully
+2025-07-19 10:38:06,546 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:08,913 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:09,495 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:09,761 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:09,962 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:10,128 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:10,310 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:10,443 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:10,611 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:10,778 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:10,944 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:11,094 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:38:11,943 - VideoClient - INFO - Отключение от сервера
+2025-07-19 10:38:16,462 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:39:42,342 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 10:39:42,343 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 10:39:42,344 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:39:42,344 - VideoClient - INFO - Получение 2 видео
+2025-07-19 10:39:42,344 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:39:42,344 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:39:42,344 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 10:39:42,344 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 10:39:42,344 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 10:39:42,344 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:39:42,344 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:39:42,344 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 10:39:42,344 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 10:39:42,344 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 10:40:11,618 - VideoClient - DEBUG - Отправлено 22 байт
+2025-07-19 10:40:11,621 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 10:40:11,621 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:40:11,622 - VideoClient - DEBUG - Получено 27 байт
+2025-07-19 10:40:11,622 - VideoClient - INFO - Успешная авторизация
+2025-07-19 10:40:13,520 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 10:40:13,520 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:40:13,520 - VideoClient - INFO - Получение 2 видео
+2025-07-19 10:40:13,521 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:40:13,521 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:40:13,521 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 10:40:13,521 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 10:40:13,521 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 10:40:13,521 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:40:13,521 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:40:13,521 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 10:40:13,521 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 10:40:13,521 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 10:40:19,376 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 10:40:19,376 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:40:19,377 - VideoClient - DEBUG - Получено 265332 байт
+2025-07-19 10:48:43,657 - VideoClient - INFO - Starting application
+2025-07-19 10:48:43,976 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 10:48:44,036 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 10:48:44,079 - VideoClient - DEBUG - UI setup completed
+2025-07-19 10:48:44,079 - VideoClient - INFO - UI initialized
+2025-07-19 10:48:44,079 - VideoClient - INFO - VideoClient initialized
+2025-07-19 10:48:44,310 - VideoClient - INFO - Application started successfully
+2025-07-19 10:48:47,292 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 10:48:47,299 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 10:48:47,299 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:48:47,299 - VideoClient - INFO - Получение 2 видео
+2025-07-19 10:48:47,299 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:48:47,299 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:48:47,299 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 10:48:47,300 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 10:48:47,300 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 10:48:47,300 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:48:47,300 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:48:47,300 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 10:48:47,300 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 10:48:47,300 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 10:48:51,359 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 10:48:51,360 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 10:48:51,360 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:48:51,360 - VideoClient - INFO - Получение 2 видео
+2025-07-19 10:48:51,360 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:48:51,360 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:48:51,360 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 10:48:51,360 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 10:48:51,361 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 10:48:51,361 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:48:51,361 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:48:51,361 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 10:48:51,361 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 10:48:51,361 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 10:48:57,294 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 10:48:57,294 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:48:57,295 - VideoClient - DEBUG - Получено 295279 байт
+2025-07-19 10:48:57,295 - VideoClient - INFO - Начато воспроизведение видео 1
+2025-07-19 10:48:57,325 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 10:48:59,312 - VideoClient - INFO - Воспроизведение остановлено
+2025-07-19 10:49:22,361 - VideoClient - INFO - Starting application
+2025-07-19 10:49:22,580 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 10:49:22,622 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 10:49:22,648 - VideoClient - DEBUG - UI setup completed
+2025-07-19 10:49:22,648 - VideoClient - INFO - UI initialized
+2025-07-19 10:49:22,649 - VideoClient - INFO - VideoClient initialized
+2025-07-19 10:49:22,856 - VideoClient - INFO - Application started successfully
+2025-07-19 10:49:25,165 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 10:49:25,165 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 10:49:25,166 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:49:25,166 - VideoClient - INFO - Получение 2 видео
+2025-07-19 10:49:25,167 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:49:25,167 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:49:25,167 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 10:49:25,167 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 10:49:25,167 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 10:49:25,167 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:49:25,167 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:49:25,167 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 10:49:25,167 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 10:49:25,167 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 10:51:09,425 - VideoClient - INFO - Starting application
+2025-07-19 10:51:09,582 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 10:51:09,595 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 10:51:09,635 - VideoClient - DEBUG - UI setup completed
+2025-07-19 10:51:09,635 - VideoClient - INFO - UI initialized
+2025-07-19 10:51:09,636 - VideoClient - INFO - VideoClient initialized
+2025-07-19 10:51:09,732 - VideoClient - INFO - Application started successfully
+2025-07-19 10:51:11,549 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 10:51:11,550 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 10:51:11,551 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:11,551 - VideoClient - INFO - Получение 2 видео
+2025-07-19 10:51:11,551 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:11,551 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:11,551 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 10:51:11,551 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 10:51:11,551 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 10:51:11,551 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:11,551 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:11,552 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 10:51:11,552 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 10:51:11,552 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 10:51:16,281 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 10:51:16,282 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:16,282 - VideoClient - DEBUG - Получено 295279 байт
+2025-07-19 10:51:16,283 - VideoClient - INFO - Начато воспроизведение видео 1
+2025-07-19 10:51:16,311 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 10:51:24,114 - VideoClient - INFO - Воспроизведение остановлено
+2025-07-19 10:51:26,647 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 10:51:26,648 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:26,648 - VideoClient - DEBUG - Получено 265332 байт
+2025-07-19 10:51:26,648 - VideoClient - INFO - Начато воспроизведение видео 2
+2025-07-19 10:51:26,649 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 10:51:30,330 - VideoClient - INFO - Воспроизведение остановлено
+2025-07-19 10:51:32,067 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 10:51:32,068 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 10:51:32,068 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:32,068 - VideoClient - INFO - Получение 2 видео
+2025-07-19 10:51:32,068 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:32,068 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:32,068 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 10:51:32,068 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 10:51:32,069 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 10:51:32,069 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:32,069 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:51:32,069 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 10:51:32,069 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 10:51:32,069 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 10:55:01,148 - VideoClient - INFO - Starting application
+2025-07-19 10:55:01,168 - VideoClient - INFO - Starting application
+2025-07-19 10:55:01,393 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 10:55:01,393 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 10:55:01,438 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 10:55:01,438 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 10:55:01,472 - VideoClient - INFO - UI initialized
+2025-07-19 10:55:01,472 - VideoClient - INFO - UI initialized
+2025-07-19 10:55:01,472 - VideoClient - INFO - VideoClient initialized
+2025-07-19 10:55:01,472 - VideoClient - INFO - VideoClient initialized
+2025-07-19 10:55:01,614 - VideoClient - INFO - Application started successfully
+2025-07-19 10:55:01,617 - VideoClient - INFO - Application started successfully
+2025-07-19 10:55:16,968 - VideoClient - INFO - Starting application
+2025-07-19 10:55:17,066 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 10:55:17,072 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 10:55:17,095 - VideoClient - INFO - UI initialized
+2025-07-19 10:55:17,095 - VideoClient - INFO - VideoClient initialized
+2025-07-19 10:55:17,171 - VideoClient - INFO - Application started successfully
+2025-07-19 10:55:19,827 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 10:55:22,579 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 10:55:22,580 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 10:55:22,581 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:22,581 - VideoClient - INFO - Получение 2 видео
+2025-07-19 10:55:22,581 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:22,581 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:22,581 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 10:55:22,581 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 10:55:22,581 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 10:55:22,581 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:22,582 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:22,582 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 10:55:22,582 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 10:55:22,582 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 10:55:28,447 - VideoClient - DEBUG - Отправлено 15 байт
+2025-07-19 10:55:28,447 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 10:55:28,447 - VideoClient - WARNING - Неудачная авторизация
+2025-07-19 10:55:35,519 - VideoClient - DEBUG - Отправлено 22 байт
+2025-07-19 10:55:35,519 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 10:55:35,519 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:35,519 - VideoClient - DEBUG - Получено 27 байт
+2025-07-19 10:55:35,519 - VideoClient - INFO - Успешная авторизация
+2025-07-19 10:55:35,520 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 10:55:35,520 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:35,520 - VideoClient - INFO - Получение 2 видео
+2025-07-19 10:55:35,520 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:35,520 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:35,520 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 10:55:35,520 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 10:55:35,520 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 10:55:35,520 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:35,520 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:35,520 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 10:55:35,520 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 10:55:35,521 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 10:55:37,877 - VideoClient - INFO - Отключение от сервера
+2025-07-19 10:55:39,127 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 10:55:39,127 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 10:55:39,127 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:39,127 - VideoClient - INFO - Получение 2 видео
+2025-07-19 10:55:39,128 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:39,128 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:39,128 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 10:55:39,128 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 10:55:39,128 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 10:55:39,128 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:39,128 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:39,129 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 10:55:39,129 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 10:55:39,129 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 10:55:52,641 - VideoClient - DEBUG - Отправлено 22 байт
+2025-07-19 10:55:52,641 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 10:55:52,641 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:52,641 - VideoClient - DEBUG - Получено 27 байт
+2025-07-19 10:55:52,641 - VideoClient - INFO - Успешная авторизация
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:52,642 - VideoClient - INFO - Получение 2 видео
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 10:55:52,642 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 10:55:55,909 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 10:55:55,910 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:55:55,910 - VideoClient - DEBUG - Получено 169171 байт
+2025-07-19 10:55:55,910 - VideoClient - INFO - Начато воспроизведение видео 1
+2025-07-19 10:55:55,939 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 10:55:59,810 - VideoClient - INFO - Воспроизведение остановлено
+2025-07-19 10:56:01,159 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 10:56:01,159 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 10:56:01,159 - VideoClient - DEBUG - Получено 169171 байт
+2025-07-19 10:56:01,160 - VideoClient - INFO - Начато воспроизведение видео 1
+2025-07-19 10:56:01,161 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 10:56:02,195 - VideoClient - INFO - Воспроизведение остановлено
+2025-07-19 10:57:25,581 - VideoClient - INFO - Starting application
+2025-07-19 10:57:25,714 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 10:57:25,724 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 10:57:25,747 - VideoClient - INFO - UI initialized
+2025-07-19 10:57:25,747 - VideoClient - INFO - VideoClient initialized
+2025-07-19 10:57:25,838 - VideoClient - INFO - Application started successfully
+2025-07-19 10:58:02,074 - VideoClient - INFO - Starting application
+2025-07-19 10:58:02,194 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 10:58:02,200 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 10:58:02,223 - VideoClient - INFO - UI initialized
+2025-07-19 10:58:02,223 - VideoClient - INFO - VideoClient initialized
+2025-07-19 10:58:02,312 - VideoClient - INFO - Application started successfully
+2025-07-19 11:00:40,918 - VideoClient - INFO - Starting application
+2025-07-19 11:00:41,115 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 11:00:41,160 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 11:00:41,179 - VideoClient - CRITICAL - Application failed: 'QFontDatabase' object has no attribute 'hasFamily'
+2025-07-19 11:01:45,519 - VideoClient - INFO - Starting application
+2025-07-19 11:01:45,786 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 11:01:45,827 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 11:01:45,827 - VideoClient - CRITICAL - Application failed: 'VideoPlayerUI' object has no attribute '_init_styles'
+2025-07-19 11:02:41,133 - VideoClient - INFO - Starting application
+2025-07-19 11:02:41,268 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 11:02:41,278 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 11:02:41,323 - VideoClient - INFO - UI initialized
+2025-07-19 11:02:41,323 - VideoClient - INFO - VideoClient initialized
+2025-07-19 11:02:41,412 - VideoClient - INFO - Application started successfully
+2025-07-19 11:02:45,085 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:02:45,087 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:02:45,090 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:02:45,090 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:02:45,091 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:02:45,091 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:02:45,091 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:02:45,091 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:02:45,091 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:02:45,091 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:02:45,091 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:02:45,091 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:02:45,091 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:02:45,091 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:05:45,263 - VideoClient - INFO - Starting application
+2025-07-19 11:05:45,532 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 11:05:45,593 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 11:05:45,643 - VideoClient - INFO - UI initialized
+2025-07-19 11:05:45,644 - VideoClient - INFO - VideoClient initialized
+2025-07-19 11:05:45,827 - VideoClient - INFO - Application started successfully
+2025-07-19 11:05:48,547 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:05:48,548 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:05:48,549 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:05:48,549 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:05:48,549 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:05:48,549 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:05:48,549 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:05:48,549 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:05:48,550 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:05:48,550 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:05:48,550 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:05:48,550 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:05:48,550 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:05:48,550 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:07:30,755 - VideoClient - INFO - Starting application
+2025-07-19 11:07:30,982 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 11:07:31,039 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 11:07:31,089 - VideoClient - INFO - UI initialized
+2025-07-19 11:07:31,089 - VideoClient - INFO - VideoClient initialized
+2025-07-19 11:07:31,252 - VideoClient - INFO - Application started successfully
+2025-07-19 11:09:07,360 - VideoClient - INFO - Starting application
+2025-07-19 11:09:07,508 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 11:09:07,521 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 11:09:07,567 - VideoClient - INFO - UI initialized
+2025-07-19 11:09:07,567 - VideoClient - INFO - VideoClient initialized
+2025-07-19 11:09:07,650 - VideoClient - INFO - Application started successfully
+2025-07-19 11:09:09,729 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:09:09,729 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:09:09,730 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:09:09,730 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:09:09,730 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:09:09,730 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:09:09,730 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:09:09,731 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:09:09,731 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:09:09,731 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:09:09,731 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:09:09,731 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:09:09,731 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:09:09,731 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:09:27,016 - VideoClient - DEBUG - Отправлено 22 байт
+2025-07-19 11:09:27,017 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 11:09:27,017 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:09:27,017 - VideoClient - DEBUG - Получено 27 байт
+2025-07-19 11:09:27,017 - VideoClient - INFO - Успешная авторизация
+2025-07-19 11:09:27,017 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:09:27,017 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:09:27,017 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:09:27,017 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:09:27,017 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:09:27,018 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:09:27,018 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:09:27,018 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:09:27,018 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:09:27,018 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:09:27,018 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:09:27,018 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:09:27,018 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:09:32,879 - VideoClient - DEBUG - Отправлено 15 байт
+2025-07-19 11:09:32,880 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 11:09:32,880 - VideoClient - WARNING - Неудачная авторизация
+2025-07-19 11:11:43,941 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:11:45,450 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:11:45,451 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:11:45,452 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:45,452 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:11:45,453 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:45,453 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:45,453 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:11:45,453 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:11:45,453 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:11:45,453 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:45,454 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:45,454 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:11:45,454 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:11:45,454 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:11:46,422 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:11:47,557 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:11:47,558 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:11:47,558 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:47,558 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:11:47,558 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:47,558 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:47,558 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:11:47,558 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:11:47,558 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:11:47,559 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:47,559 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:47,559 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:11:47,559 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:11:47,559 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:11:48,206 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:11:48,808 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:11:48,809 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:11:48,809 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:48,810 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:11:48,810 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:48,810 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:48,810 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:11:48,810 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:11:48,810 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:11:48,810 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:48,810 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:48,810 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:11:48,811 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:11:48,811 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:11:49,540 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:11:50,341 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:11:50,342 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:11:50,343 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:50,343 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:11:50,343 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:50,343 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:50,343 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:11:50,343 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:11:50,343 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:11:50,344 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:50,344 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:11:50,344 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:11:50,344 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:11:50,344 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:12:37,608 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:12:43,074 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:12:43,076 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:12:43,076 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:12:43,076 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:12:43,076 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:12:43,077 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:12:43,077 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:12:43,077 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:12:43,077 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:12:43,077 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:12:43,077 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:12:43,077 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:12:43,077 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:12:43,077 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:12:43,673 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:17:54,049 - VideoClient - INFO - Starting application
+2025-07-19 11:17:54,380 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 11:17:54,442 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 11:17:54,454 - VideoClient - CRITICAL - Application failed: 'VideoPlayerUI' object has no attribute 'login_btn'
+2025-07-19 11:18:24,309 - VideoClient - INFO - Starting application
+2025-07-19 11:18:24,430 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 11:18:24,440 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 11:18:24,451 - VideoClient - CRITICAL - Application failed: 'VideoPlayerUI' object has no attribute 'login_btn'
+2025-07-19 11:20:16,638 - VideoClient - INFO - Starting application
+2025-07-19 11:20:16,766 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 11:20:16,776 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 11:20:16,822 - VideoClient - CRITICAL - Application failed: 'VideoPlayerUI' object has no attribute 'play_btn'
+2025-07-19 11:22:12,140 - VideoClient - INFO - Starting application
+2025-07-19 11:22:12,276 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 11:22:12,287 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 11:22:12,325 - VideoClient - CRITICAL - Application failed: 'NoneType' object has no attribute 'addWidget'
+2025-07-19 11:23:12,946 - VideoClient - INFO - Starting application
+2025-07-19 11:23:13,094 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 11:23:13,107 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 11:23:13,149 - VideoClient - INFO - VideoClient initialized
+2025-07-19 11:23:13,325 - VideoClient - INFO - Application started successfully
+2025-07-19 11:23:15,446 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:23:15,447 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:23:15,447 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:15,447 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:23:15,448 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:15,448 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:15,448 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:23:15,448 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:23:15,448 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:23:15,448 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:15,448 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:15,448 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:23:15,449 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:23:15,449 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:23:35,023 - VideoClient - DEBUG - Отправлено 22 байт
+2025-07-19 11:23:35,024 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 11:23:35,024 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:35,024 - VideoClient - DEBUG - Получено 27 байт
+2025-07-19 11:23:35,024 - VideoClient - INFO - Успешная авторизация
+2025-07-19 11:23:35,024 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:23:35,024 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:35,024 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:23:35,024 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:35,024 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:35,024 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:23:35,024 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:23:35,024 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:23:35,024 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:35,025 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:35,025 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:23:35,025 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:23:35,025 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:23:46,521 - VideoClient - DEBUG - Отправлено 22 байт
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Получено 27 байт
+2025-07-19 11:23:46,522 - VideoClient - INFO - Успешная авторизация
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:46,522 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:46,522 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:46,523 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:23:46,523 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:23:46,523 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:23:51,849 - VideoClient - DEBUG - Отправлено 16 байт
+2025-07-19 11:23:51,849 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 11:23:51,849 - VideoClient - WARNING - Неудачная авторизация
+2025-07-19 11:23:57,391 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:23:58,076 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:23:58,077 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:23:58,077 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:58,077 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:23:58,078 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:58,078 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:58,078 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:23:58,078 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:23:58,078 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:23:58,078 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:58,079 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:23:58,079 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:23:58,079 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:23:58,079 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:24:07,125 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 11:24:07,126 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:24:07,127 - VideoClient - DEBUG - Получено 169171 байт
+2025-07-19 11:24:07,127 - VideoClient - INFO - Начато воспроизведение видео 1
+2025-07-19 11:24:07,146 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 11:24:41,811 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:24:42,679 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:24:42,680 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:24:42,680 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:41:04,593 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:41:05,351 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:41:05,352 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:41:05,356 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:41:05,356 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:41:05,356 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:41:05,356 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:41:05,356 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:41:05,357 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:41:05,357 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:41:05,357 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:41:05,357 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:41:05,357 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:41:05,357 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:41:05,357 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:41:07,854 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:42:44,776 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:42:44,778 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:42:44,779 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:42:44,779 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:42:44,779 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:42:44,779 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:42:44,779 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:42:44,779 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:42:44,779 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:42:44,779 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:42:44,779 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:42:44,779 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:42:44,779 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:42:44,779 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:45:44,406 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 11:45:44,408 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:45:44,408 - VideoClient - DEBUG - Получено 169171 байт
+2025-07-19 11:45:44,409 - VideoClient - INFO - Начато воспроизведение видео 1
+2025-07-19 11:45:44,432 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 11:51:30,973 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:51:31,803 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:51:31,804 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:51:31,807 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:31,807 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:51:31,807 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:31,807 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:31,807 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:51:31,807 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:51:31,807 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:51:31,807 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:31,807 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:31,807 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:51:31,807 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:51:31,807 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:51:42,620 - VideoClient - DEBUG - Отправлено 22 байт
+2025-07-19 11:51:42,621 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 11:51:42,621 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:42,621 - VideoClient - DEBUG - Получено 27 байт
+2025-07-19 11:51:42,621 - VideoClient - INFO - Успешная авторизация
+2025-07-19 11:51:42,621 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:51:42,621 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:42,621 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:51:42,621 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:42,621 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:42,621 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:51:42,622 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:51:42,622 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:51:42,622 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:42,622 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:42,622 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:51:42,622 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:51:42,622 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:51:48,622 - VideoClient - DEBUG - Отправлено 23 байт
+2025-07-19 11:51:48,622 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 11:51:48,622 - VideoClient - WARNING - Неудачная авторизация
+2025-07-19 11:51:54,367 - VideoClient - INFO - Отключение от сервера
+2025-07-19 11:51:55,091 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 11:51:55,091 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:51:55,091 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:55,091 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:51:55,091 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:55,091 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:55,091 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:51:55,092 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:51:55,092 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:51:55,092 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:55,092 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:55,092 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:51:55,092 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:51:55,092 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:51:57,122 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 11:51:57,123 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:51:57,125 - VideoClient - DEBUG - Получено 460269 байт
+2025-07-19 11:51:57,126 - VideoClient - INFO - Начато воспроизведение видео 2
+2025-07-19 11:51:57,147 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 11:52:02,071 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 11:52:02,072 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:52:02,072 - VideoClient - DEBUG - Получено 169171 байт
+2025-07-19 11:52:02,073 - VideoClient - INFO - Начато воспроизведение видео 1
+2025-07-19 11:52:02,073 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 11:52:11,296 - VideoClient - DEBUG - Отправлено 22 байт
+2025-07-19 11:52:11,297 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 11:52:11,297 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:52:11,297 - VideoClient - DEBUG - Получено 27 байт
+2025-07-19 11:52:11,297 - VideoClient - INFO - Успешная авторизация
+2025-07-19 11:52:11,297 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 11:52:11,297 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:52:11,298 - VideoClient - INFO - Получение 2 видео
+2025-07-19 11:52:11,298 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:52:11,298 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:52:11,298 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 11:52:11,298 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 11:52:11,298 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 11:52:11,298 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:52:11,298 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:52:11,298 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 11:52:11,298 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 11:52:11,298 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 11:52:15,036 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 11:52:15,037 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:52:15,037 - VideoClient - DEBUG - Получено 169171 байт
+2025-07-19 11:52:15,037 - VideoClient - INFO - Начато воспроизведение видео 1
+2025-07-19 11:52:15,038 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 11:52:17,256 - VideoClient - INFO - Воспроизведение остановлено
+2025-07-19 11:52:18,654 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 11:52:18,654 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:52:18,654 - VideoClient - DEBUG - Получено 169171 байт
+2025-07-19 11:52:18,654 - VideoClient - INFO - Начато воспроизведение видео 1
+2025-07-19 11:52:18,655 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 11:52:21,204 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 11:52:21,204 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:52:21,204 - VideoClient - DEBUG - Получено 169171 байт
+2025-07-19 11:52:21,204 - VideoClient - INFO - Начато воспроизведение видео 1
+2025-07-19 11:52:21,205 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 11:52:23,738 - VideoClient - DEBUG - Отправлено 10 байт
+2025-07-19 11:52:23,738 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 11:52:23,739 - VideoClient - DEBUG - Получено 460269 байт
+2025-07-19 11:52:23,739 - VideoClient - INFO - Начато воспроизведение видео 2
+2025-07-19 11:52:23,740 - VideoClient - DEBUG - Воспроизведение сегмента видео
+2025-07-19 11:52:25,855 - VideoClient - INFO - Воспроизведение остановлено
+2025-07-19 12:08:45,837 - VideoClient - INFO - Starting application
+2025-07-19 12:08:46,099 - VideoClient - INFO - Инициализация NetworkClient для localhost:12345
+2025-07-19 12:08:46,142 - VideoClient - INFO - VideoPlayer initialized
+2025-07-19 12:08:46,185 - VideoClient - INFO - VideoClient initialized
+2025-07-19 12:08:46,341 - VideoClient - INFO - Application started successfully
+2025-07-19 12:08:48,544 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 12:08:50,025 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 12:08:54,190 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 12:08:55,573 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 12:08:56,823 - VideoClient - ERROR - Ошибка подключения: [Errno 61] Connection refused
+2025-07-19 12:08:58,675 - VideoClient - INFO - Успешное подключение к серверу
+2025-07-19 12:08:58,675 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 12:08:58,676 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 12:08:58,676 - VideoClient - INFO - Получение 2 видео
+2025-07-19 12:08:58,676 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 12:08:58,676 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 12:08:58,676 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 12:08:58,676 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 12:08:58,676 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 12:08:58,677 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 12:08:58,677 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 12:08:58,677 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 12:08:58,677 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 12:08:58,677 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
+2025-07-19 12:09:06,902 - VideoClient - DEBUG - Отправлено 22 байт
+2025-07-19 12:09:06,902 - VideoClient - DEBUG - Получено 1 байт
+2025-07-19 12:09:06,902 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 12:09:06,902 - VideoClient - DEBUG - Получено 27 байт
+2025-07-19 12:09:06,902 - VideoClient - INFO - Успешная авторизация
+2025-07-19 12:09:06,902 - VideoClient - DEBUG - Отправлено 1 байт
+2025-07-19 12:09:06,903 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 12:09:06,903 - VideoClient - INFO - Получение 2 видео
+2025-07-19 12:09:06,903 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 12:09:06,903 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 12:09:06,903 - VideoClient - DEBUG - Получено 55 байт
+2025-07-19 12:09:06,903 - VideoClient - DEBUG - Created VideoInfo: Test Video 1 by Test Author
+2025-07-19 12:09:06,903 - VideoClient - DEBUG - Получена информация о видео: ID=1, Название=Test Video 1
+2025-07-19 12:09:06,903 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 12:09:06,903 - VideoClient - DEBUG - Получено 4 байт
+2025-07-19 12:09:06,903 - VideoClient - DEBUG - Получено 64 байт
+2025-07-19 12:09:06,903 - VideoClient - DEBUG - Created VideoInfo: Demo Video by Another Author
+2025-07-19 12:09:06,903 - VideoClient - DEBUG - Получена информация о видео: ID=2, Название=Demo Video
