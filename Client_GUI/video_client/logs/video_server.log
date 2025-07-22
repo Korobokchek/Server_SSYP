@@ -1,0 +1,449 @@
+2025-07-21 15:33:43,785 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 15:33:49,463 - VideoServer - INFO - New connection from ('127.0.0.1', 53079)
+2025-07-21 15:33:49,463 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:34:11,185 - VideoServer - INFO - New user registered: gosha
+2025-07-21 15:34:18,691 - VideoServer - INFO - User gosha logged in successfully
+2025-07-21 15:34:18,692 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:34:18,692 - VideoServer - INFO - Sent user videos for gosha
+2025-07-21 15:34:27,347 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:34:27,450 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-21 15:34:41,201 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:34:41,306 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-21 15:34:59,208 - VideoServer - INFO - Shutting down server...
+2025-07-21 15:34:59,209 - VideoServer - INFO - Server stopped
+2025-07-21 15:35:07,224 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 15:35:11,036 - VideoServer - INFO - New connection from ('127.0.0.1', 53086)
+2025-07-21 15:35:11,036 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:35:12,737 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:35:12,843 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-21 15:36:14,642 - VideoServer - INFO - Shutting down server...
+2025-07-21 15:36:14,642 - VideoServer - INFO - Server stopped
+2025-07-21 15:37:27,818 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 15:37:32,393 - VideoServer - INFO - New connection from ('127.0.0.1', 53089)
+2025-07-21 15:37:32,393 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:37:35,024 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:37:35,130 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-21 15:37:57,246 - VideoServer - INFO - New user registered: gosha
+2025-07-21 15:38:02,597 - VideoServer - INFO - User gosha logged in successfully
+2025-07-21 15:38:02,597 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:38:02,598 - VideoServer - INFO - Sent user videos for gosha
+2025-07-21 15:38:16,990 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:38:17,095 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-21 15:45:35,267 - VideoServer - INFO - New connection from ('127.0.0.1', 53102)
+2025-07-21 15:45:35,268 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:45:41,248 - VideoServer - INFO - User gosha logged in successfully
+2025-07-21 15:45:41,248 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:45:41,249 - VideoServer - INFO - Sent user videos for gosha
+2025-07-21 15:46:24,635 - VideoServer - INFO - Shutting down server...
+2025-07-21 15:46:24,636 - VideoServer - INFO - Server stopped
+2025-07-21 15:46:24,788 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 15:46:27,373 - VideoServer - INFO - Shutting down server...
+2025-07-21 15:46:27,373 - VideoServer - INFO - Server stopped
+2025-07-21 15:46:29,566 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 15:46:33,201 - VideoServer - INFO - New connection from ('127.0.0.1', 53103)
+2025-07-21 15:46:33,201 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:46:45,204 - VideoServer - INFO - New user registered: gosha
+2025-07-21 15:46:49,754 - VideoServer - INFO - User gosha logged in successfully
+2025-07-21 15:46:49,754 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:46:49,755 - VideoServer - INFO - Sent user videos for gosha
+2025-07-21 15:49:02,778 - VideoServer - INFO - New connection from ('127.0.0.1', 53104)
+2025-07-21 15:49:02,779 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:51:17,859 - VideoServer - INFO - User gosha logged in successfully
+2025-07-21 15:51:17,859 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:51:17,860 - VideoServer - INFO - Sent user videos for gosha
+2025-07-21 15:51:25,243 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:51:25,346 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-21 15:51:29,409 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-21 15:51:29,514 - VideoServer - INFO - Sent segment 1 (19 bytes)
+2025-07-21 15:51:29,516 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:51:29,618 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-21 15:51:29,637 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-21 15:51:29,740 - VideoServer - INFO - Sent segment 2 (19 bytes)
+2025-07-21 15:51:29,743 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:51:29,848 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-21 15:51:29,870 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-21 15:51:29,976 - VideoServer - INFO - Sent segment 3 (19 bytes)
+2025-07-21 15:51:29,979 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:51:30,085 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-21 15:51:30,105 - VideoServer - INFO - Request for video 1, segment 4, quality 0
+2025-07-21 15:51:30,211 - VideoServer - INFO - Sent segment 4 (19 bytes)
+2025-07-21 15:51:30,214 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:51:30,317 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-21 15:51:30,340 - VideoServer - INFO - Request for video 1, segment 4, quality 0
+2025-07-21 15:51:30,445 - VideoServer - INFO - Sent segment 4 (19 bytes)
+2025-07-21 15:51:30,448 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:51:30,552 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-21 15:52:00,145 - VideoServer - INFO - Shutting down server...
+2025-07-21 15:52:00,145 - VideoServer - INFO - Server stopped
+2025-07-22 10:23:55,866 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 10:24:00,956 - VideoServer - INFO - New connection from ('127.0.0.1', 65421)
+2025-07-22 10:24:00,956 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:24:21,151 - VideoServer - INFO - New user registered: gosha
+2025-07-22 10:24:25,520 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 10:24:25,521 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:24:25,522 - VideoServer - INFO - Sent user videos for gosha
+2025-07-22 10:24:31,165 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:24:31,271 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:24:41,789 - VideoServer - INFO - Shutting down server...
+2025-07-22 10:24:41,789 - VideoServer - INFO - Server stopped
+2025-07-22 10:30:52,791 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 10:31:08,626 - VideoServer - INFO - New connection from ('127.0.0.1', 65426)
+2025-07-22 10:31:08,627 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:31:26,966 - VideoServer - INFO - Shutting down server...
+2025-07-22 10:31:26,966 - VideoServer - INFO - Server stopped
+2025-07-22 10:33:54,925 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 10:34:00,538 - VideoServer - INFO - New connection from ('127.0.0.1', 65431)
+2025-07-22 10:34:00,538 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:34:13,019 - VideoServer - INFO - New user registered: gosha
+2025-07-22 10:34:18,148 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 10:34:18,150 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:34:18,150 - VideoServer - INFO - Sent user videos for gosha
+2025-07-22 10:34:32,525 - VideoServer - INFO - Shutting down server...
+2025-07-22 10:34:32,526 - VideoServer - INFO - Server stopped
+2025-07-22 10:34:52,233 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 10:35:02,267 - VideoServer - INFO - New connection from ('127.0.0.1', 65433)
+2025-07-22 10:35:02,268 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:35:03,784 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:03,890 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:09,680 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 10:35:09,781 - VideoServer - INFO - Sent segment 1 (19 bytes)
+2025-07-22 10:35:09,783 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:09,889 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:09,906 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 10:35:10,011 - VideoServer - INFO - Sent segment 1 (19 bytes)
+2025-07-22 10:35:10,013 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:10,116 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:11,762 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 10:35:11,868 - VideoServer - INFO - Sent segment 1 (19 bytes)
+2025-07-22 10:35:11,870 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:11,974 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:11,992 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-22 10:35:12,098 - VideoServer - INFO - Sent segment 6 (19 bytes)
+2025-07-22 10:35:12,103 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:12,207 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:12,217 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-22 10:35:12,321 - VideoServer - INFO - Sent segment 6 (19 bytes)
+2025-07-22 10:35:12,323 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:12,427 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:12,438 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-22 10:35:12,540 - VideoServer - INFO - Sent segment 6 (19 bytes)
+2025-07-22 10:35:12,542 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:12,645 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:12,660 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-22 10:35:12,762 - VideoServer - INFO - Sent segment 6 (19 bytes)
+2025-07-22 10:35:12,763 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:12,867 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:12,913 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-22 10:35:13,016 - VideoServer - INFO - Sent segment 6 (19 bytes)
+2025-07-22 10:35:13,018 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:13,121 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:13,127 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-22 10:35:13,233 - VideoServer - INFO - Sent segment 7 (19 bytes)
+2025-07-22 10:35:13,235 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:13,337 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:13,348 - VideoServer - INFO - Request for video 1, segment 11, quality 0
+2025-07-22 10:35:13,453 - VideoServer - INFO - Sent segment 11 (20 bytes)
+2025-07-22 10:35:13,454 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:13,557 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:13,567 - VideoServer - INFO - Request for video 1, segment 16, quality 0
+2025-07-22 10:35:13,673 - VideoServer - INFO - Sent segment 16 (20 bytes)
+2025-07-22 10:35:13,674 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:13,779 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:35:13,790 - VideoServer - INFO - Request for video 1, segment 23, quality 0
+2025-07-22 10:35:13,891 - VideoServer - INFO - Sent segment 23 (20 bytes)
+2025-07-22 10:35:13,894 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:35:13,997 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:38:10,004 - VideoServer - INFO - Shutting down server...
+2025-07-22 10:38:10,005 - VideoServer - INFO - Server stopped
+2025-07-22 10:41:35,005 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 10:41:42,685 - VideoServer - INFO - New connection from ('127.0.0.1', 65438)
+2025-07-22 10:41:42,687 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:41:51,877 - VideoServer - INFO - New user registered: gosha
+2025-07-22 10:41:58,470 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 10:41:58,470 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:41:58,471 - VideoServer - INFO - Sent user videos for gosha
+2025-07-22 10:42:16,931 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:42:17,038 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:42:18,679 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:42:18,787 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:45:08,126 - VideoServer - INFO - Shutting down server...
+2025-07-22 10:45:08,127 - VideoServer - INFO - Server stopped
+2025-07-22 10:45:12,688 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 10:45:13,284 - VideoServer - INFO - Shutting down server...
+2025-07-22 10:45:13,285 - VideoServer - INFO - Server stopped
+2025-07-22 10:45:13,629 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 10:45:15,041 - VideoServer - INFO - Shutting down server...
+2025-07-22 10:45:15,041 - VideoServer - INFO - Server stopped
+2025-07-22 10:45:15,928 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 10:47:15,194 - VideoServer - INFO - Shutting down server...
+2025-07-22 10:47:15,195 - VideoServer - INFO - Server stopped
+2025-07-22 10:47:43,815 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 10:47:50,286 - VideoServer - INFO - New connection from ('127.0.0.1', 65452)
+2025-07-22 10:47:50,286 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:48:02,929 - VideoServer - INFO - New user registered: gosha
+2025-07-22 10:48:07,594 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 10:48:07,594 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:48:07,595 - VideoServer - INFO - Sent user videos for gosha
+2025-07-22 10:48:15,455 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 10:48:15,563 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 10:48:15,573 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 10:48:15,678 - VideoServer - INFO - Sent segment 1 (19 bytes)
+2025-07-22 10:48:15,681 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-22 10:48:15,787 - VideoServer - INFO - Sent segment 2 (19 bytes)
+2025-07-22 10:48:15,790 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-22 10:48:15,896 - VideoServer - INFO - Sent segment 3 (19 bytes)
+2025-07-22 10:53:07,460 - VideoServer - INFO - Shutting down server...
+2025-07-22 10:53:07,461 - VideoServer - INFO - Server stopped
+2025-07-22 10:53:28,303 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 10:53:34,087 - VideoServer - INFO - New connection from ('127.0.0.1', 65527)
+2025-07-22 10:53:34,088 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:54:27,099 - VideoServer - INFO - New connection from ('127.0.0.1', 65529)
+2025-07-22 10:54:27,101 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:54:34,497 - VideoServer - INFO - New user registered: gosha
+2025-07-22 10:54:38,744 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 10:54:38,744 - VideoServer - INFO - Sent video list to client
+2025-07-22 10:54:38,745 - VideoServer - INFO - Sent user videos for gosha
+2025-07-22 10:58:04,079 - VideoServer - INFO - Shutting down server...
+2025-07-22 10:58:04,080 - VideoServer - INFO - Server stopped
+2025-07-22 11:03:48,805 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 11:03:50,732 - VideoServer - INFO - New connection from ('127.0.0.1', 49157)
+2025-07-22 11:03:52,207 - VideoServer - INFO - New connection from ('127.0.0.1', 49158)
+2025-07-22 11:03:53,768 - VideoServer - INFO - New connection from ('127.0.0.1', 49159)
+2025-07-22 11:03:55,071 - VideoServer - INFO - New connection from ('127.0.0.1', 49160)
+2025-07-22 11:04:05,813 - VideoServer - INFO - New connection from ('127.0.0.1', 49161)
+2025-07-22 11:04:13,219 - VideoServer - INFO - New connection from ('127.0.0.1', 49162)
+2025-07-22 11:05:28,416 - VideoServer - INFO - Shutting down server...
+2025-07-22 11:05:28,417 - VideoServer - INFO - Server stopped
+2025-07-22 11:06:06,693 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 11:06:10,255 - VideoServer - INFO - Shutting down server...
+2025-07-22 11:06:10,256 - VideoServer - INFO - Server stopped
+2025-07-22 11:06:15,430 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 11:06:18,450 - VideoServer - INFO - New connection from ('127.0.0.1', 49167)
+2025-07-22 11:06:18,451 - VideoServer - INFO - Sent video list to client
+2025-07-22 11:06:21,094 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 11:06:21,201 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 11:06:37,022 - VideoServer - INFO - New user registered: gosha
+2025-07-22 11:06:42,193 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 11:09:08,454 - VideoServer - INFO - Shutting down server...
+2025-07-22 11:09:08,455 - VideoServer - INFO - Server stopped
+2025-07-22 11:09:57,347 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 11:10:01,777 - VideoServer - INFO - New connection from ('127.0.0.1', 49176)
+2025-07-22 11:10:01,778 - VideoServer - INFO - Sent video list to client
+2025-07-22 11:10:04,486 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 11:10:04,594 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 11:11:38,513 - VideoServer - INFO - Shutting down server...
+2025-07-22 11:11:38,514 - VideoServer - INFO - Server stopped
+2025-07-22 11:14:07,337 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 11:14:11,621 - VideoServer - INFO - New connection from ('127.0.0.1', 49185)
+2025-07-22 11:14:11,622 - VideoServer - INFO - Sent video list to client
+2025-07-22 11:14:21,025 - VideoServer - INFO - New user registered: gosha
+2025-07-22 11:14:24,813 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 11:14:24,814 - VideoServer - INFO - Sent video list to client
+2025-07-22 11:14:24,814 - VideoServer - INFO - Sent user videos for gosha
+2025-07-22 11:14:32,285 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 11:14:32,387 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 11:16:47,779 - VideoServer - INFO - Shutting down server...
+2025-07-22 11:16:47,780 - VideoServer - INFO - Server stopped
+2025-07-22 11:16:50,008 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 11:16:54,158 - VideoServer - INFO - New connection from ('127.0.0.1', 49192)
+2025-07-22 11:16:54,159 - VideoServer - INFO - Sent video list to client
+2025-07-22 11:16:56,063 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 11:16:56,169 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 11:17:09,753 - VideoServer - INFO - New user registered: gosha
+2025-07-22 11:17:14,484 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 11:17:14,485 - VideoServer - INFO - Sent video list to client
+2025-07-22 11:17:14,486 - VideoServer - INFO - Sent user videos for gosha
+2025-07-22 11:18:14,258 - VideoServer - INFO - Shutting down server...
+2025-07-22 11:18:14,258 - VideoServer - INFO - Server stopped
+2025-07-22 11:19:41,345 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 11:19:45,292 - VideoServer - INFO - New connection from ('127.0.0.1', 49199)
+2025-07-22 11:19:45,293 - VideoServer - INFO - Sent video list to client
+2025-07-22 11:20:00,700 - VideoServer - INFO - New user registered: gosha
+2025-07-22 11:20:02,777 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 11:20:02,884 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 11:20:10,543 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 11:20:10,544 - VideoServer - INFO - Sent video list to client
+2025-07-22 11:20:10,544 - VideoServer - INFO - Sent user videos for gosha
+2025-07-22 11:23:42,694 - VideoServer - INFO - Shutting down server...
+2025-07-22 11:23:42,695 - VideoServer - INFO - Server stopped
+2025-07-22 11:26:38,960 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 11:26:43,952 - VideoServer - INFO - New connection from ('127.0.0.1', 49213)
+2025-07-22 11:26:43,953 - VideoServer - INFO - Sent video list to client
+2025-07-22 11:26:47,057 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 11:26:47,057 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 11:26:56,181 - VideoServer - INFO - Request for video 2, segment 0, quality 0
+2025-07-22 11:26:56,182 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 11:27:30,930 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 11:27:30,932 - VideoServer - INFO - Sent video list to client
+2025-07-22 11:27:30,933 - VideoServer - INFO - Sent user videos for gosha
+2025-07-22 11:29:16,831 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 11:29:16,832 - VideoServer - INFO - Sent segment 0 (19 bytes)
+2025-07-22 11:31:05,145 - VideoServer - INFO - Shutting down server...
+2025-07-22 11:31:05,146 - VideoServer - INFO - Server stopped
+2025-07-22 11:35:45,079 - VideoServer - INFO - Сервер инициализирован с тестовыми данными
+2025-07-22 11:35:45,081 - VideoServer - INFO - Сервер запущен на localhost:12345
+2025-07-22 11:35:49,430 - VideoServer - INFO - Новое подключение от ('127.0.0.1', 49233)
+2025-07-22 11:35:49,431 - VideoServer - INFO - Отправлен список видео клиенту
+2025-07-22 11:35:52,129 - VideoServer - INFO - Запрос видео 1, сегмент 0, качество 0
+2025-07-22 11:35:52,129 - VideoServer - DEBUG - Отправлен сегмент 0 (41 байт)
+2025-07-22 11:36:08,666 - VideoServer - INFO - Пользователь gosha успешно авторизован
+2025-07-22 11:36:08,666 - VideoServer - INFO - Отправлен список видео клиенту
+2025-07-22 11:36:08,667 - VideoServer - INFO - Отправлены видео пользователя gosha
+2025-07-22 11:45:14,682 - VideoServer - INFO - Остановка сервера...
+2025-07-22 11:45:14,683 - VideoServer - INFO - Сервер остановлен
+2025-07-22 11:45:14,683 - VideoServer - INFO - Сервер инициализирован с тестовыми данными
+2025-07-22 11:45:14,683 - VideoServer - INFO - Сервер инициализирован с тестовыми данными
+2025-07-22 11:45:14,684 - VideoServer - INFO - Сервер запущен на localhost:12345
+2025-07-22 11:45:14,684 - VideoServer - INFO - Сервер запущен на localhost:12345
+2025-07-22 11:46:12,988 - VideoServer - INFO - Сервер запущен на localhost:12345
+2025-07-22 11:46:17,491 - VideoServer - INFO - Новое подключение от ('127.0.0.1', 49252)
+2025-07-22 11:46:17,491 - VideoServer - INFO - Отправлен список видео клиенту
+2025-07-22 11:46:19,229 - VideoServer - INFO - Запрос видео 1, сегмент 0, качество 0
+2025-07-22 11:46:19,229 - VideoServer - DEBUG - Отправлен сегмент 0 (33 байт)
+2025-07-22 11:46:32,230 - VideoServer - INFO - Пользователь gosha успешно авторизован
+2025-07-22 11:46:32,231 - VideoServer - INFO - Отправлен список видео клиенту
+2025-07-22 11:46:32,232 - VideoServer - INFO - Отправлены видео пользователя gosha
+2025-07-22 11:48:10,985 - VideoServer - INFO - Сервер остановлен
+2025-07-22 11:50:06,890 - VideoServer - INFO - Сервер запущен на localhost:12345
+2025-07-22 11:50:11,944 - VideoServer - INFO - Сервер остановлен
+2025-07-22 11:54:54,183 - VideoServer - INFO - Сервер запущен на localhost:12345
+2025-07-22 11:54:56,917 - VideoServer - INFO - Новое подключение от ('127.0.0.1', 49265)
+2025-07-22 11:54:56,917 - VideoServer - INFO - Отправлен список видео клиенту
+2025-07-22 11:54:59,351 - VideoServer - INFO - Запрос видео 1, сегмент 0, качество 0
+2025-07-22 11:54:59,351 - VideoServer - DEBUG - Отправлен сегмент 0 (33 байт)
+2025-07-22 11:55:11,212 - VideoServer - INFO - Пользователь gosha успешно авторизован
+2025-07-22 11:55:11,214 - VideoServer - INFO - Отправлен список видео клиенту
+2025-07-22 11:55:11,215 - VideoServer - INFO - Отправлены видео пользователя gosha
+2025-07-22 11:58:16,474 - VideoServer - INFO - Сервер остановлен
+2025-07-22 12:12:07,180 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 12:12:14,769 - VideoServer - INFO - New connection from ('127.0.0.1', 49308)
+2025-07-22 12:12:35,337 - VideoServer - INFO - New user registered: gosha
+2025-07-22 12:12:39,387 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 12:18:14,708 - VideoServer - INFO - Server stopped
+2025-07-22 12:18:14,709 - VideoServer - INFO - Server stopped
+2025-07-22 12:18:15,678 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 12:18:20,783 - VideoServer - INFO - New connection from ('127.0.0.1', 49317)
+2025-07-22 12:18:23,204 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 12:18:29,211 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 12:18:36,173 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 12:20:24,695 - VideoServer - INFO - Server stopped
+2025-07-22 12:20:24,696 - VideoServer - INFO - Server stopped
+2025-07-22 12:20:24,764 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 12:20:28,622 - VideoServer - INFO - New connection from ('127.0.0.1', 49328)
+2025-07-22 12:20:34,430 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 12:25:37,495 - VideoServer - INFO - Server stopped
+2025-07-22 12:25:37,496 - VideoServer - INFO - Server stopped
+2025-07-22 13:15:29,461 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 13:15:32,377 - VideoServer - INFO - New connection from ('127.0.0.1', 49453)
+2025-07-22 13:15:34,975 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,066 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 13:15:43,067 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,077 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 13:15:43,078 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,085 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 13:15:43,086 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,093 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 13:15:43,094 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,100 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 13:15:43,100 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,110 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 13:15:43,111 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,117 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 13:15:43,118 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,133 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 13:15:43,134 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,141 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-22 13:15:43,142 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,148 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-22 13:15:43,149 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,155 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-22 13:15:43,156 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,162 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-22 13:15:43,162 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,168 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-22 13:15:43,169 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,175 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-22 13:15:43,175 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,190 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-22 13:15:43,191 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,197 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-22 13:15:43,198 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,204 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-22 13:15:43,204 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,210 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-22 13:15:43,210 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,234 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-22 13:15:43,235 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,242 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-22 13:15:43,243 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,260 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-22 13:15:43,261 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,267 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-22 13:15:43,268 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,275 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-22 13:15:43,276 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:43,282 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-22 13:15:43,283 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 13:15:53,524 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 13:16:09,116 - VideoServer - INFO - Request for video 2, segment 0, quality 0
+2025-07-22 13:16:14,747 - VideoServer - INFO - Request for video 2, segment 0, quality 0
+2025-07-22 13:16:24,793 - VideoServer - INFO - Request for video 2, segment 1, quality 0
+2025-07-22 13:16:29,880 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 13:16:34,836 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-22 13:16:44,878 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-22 13:16:54,916 - VideoServer - INFO - Request for video 1, segment 4, quality 0
+2025-07-22 13:17:04,955 - VideoServer - INFO - Request for video 1, segment 5, quality 0
+2025-07-22 13:21:48,987 - VideoServer - INFO - Server stopped
+2025-07-22 13:21:48,988 - VideoServer - INFO - Server stopped
+2025-07-22 14:40:54,161 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 14:41:55,089 - VideoServer - INFO - New connection from ('127.0.0.1', 49628)
+2025-07-22 14:41:57,604 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 14:42:11,673 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 14:53:59,941 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 14:54:05,605 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 14:54:13,730 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 14:54:13,732 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 14:54:13,740 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 14:54:13,741 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 14:54:13,759 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 14:54:13,761 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 14:54:13,776 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 14:54:13,777 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 14:54:13,793 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 14:54:13,794 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 14:54:20,180 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-22 15:30:55,119 - VideoServer - INFO - Server stopped
+2025-07-22 15:30:55,120 - VideoServer - INFO - Server stopped
+2025-07-22 15:42:29,575 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 15:42:30,100 - VideoServer - INFO - New connection from ('127.0.0.1', 50329)
+2025-07-22 15:42:47,623 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 15:42:55,841 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 15:43:51,856 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 15:43:56,359 - VideoServer - INFO - Request for video 2, segment 0, quality 0
+2025-07-22 15:44:27,118 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 15:45:05,257 - VideoServer - INFO - Server stopped
+2025-07-22 15:45:05,257 - VideoServer - INFO - Server stopped
+2025-07-22 15:48:04,544 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 15:48:04,966 - VideoServer - INFO - New connection from ('127.0.0.1', 50439)
+2025-07-22 15:48:09,789 - VideoServer - INFO - Server stopped
+2025-07-22 15:48:09,789 - VideoServer - INFO - Server stopped
+2025-07-22 15:55:26,065 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 15:55:44,636 - VideoServer - INFO - New connection from ('127.0.0.1', 50598)
+2025-07-22 15:55:46,880 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 15:56:00,727 - VideoServer - INFO - Server stopped
+2025-07-22 15:56:00,727 - VideoServer - INFO - Server stopped
+2025-07-22 15:58:02,220 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 15:58:02,741 - VideoServer - INFO - New connection from ('127.0.0.1', 50654)
+2025-07-22 15:58:04,912 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 16:04:04,924 - VideoServer - INFO - Server stopped
+2025-07-22 16:04:04,926 - VideoServer - INFO - Server stopped
+2025-07-22 20:50:38,207 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 20:50:38,541 - VideoServer - INFO - New connection from ('127.0.0.1', 55536)
+2025-07-22 20:50:40,702 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-22 21:21:42,365 - VideoServer - INFO - Server stopped
+2025-07-22 21:21:42,366 - VideoServer - INFO - Server stopped
+2025-07-22 21:58:42,004 - VideoServer - INFO - Server started on localhost:12345
+2025-07-22 21:58:51,791 - VideoServer - INFO - New connection from ('127.0.0.1', 55977)
+2025-07-22 21:58:59,300 - VideoServer - INFO - User gosha logged in successfully
+2025-07-22 22:05:05,568 - VideoServer - INFO - Server stopped
+2025-07-22 22:05:05,568 - VideoServer - INFO - Server stopped

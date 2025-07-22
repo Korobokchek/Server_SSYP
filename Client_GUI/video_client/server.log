@@ -1,0 +1,396 @@
+2025-07-21 00:43:00,784 - VideoServer - INFO - Video server initialized with white background video (300s)
+2025-07-21 00:43:00,799 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 00:43:07,786 - VideoServer - INFO - New connection from ('127.0.0.1', 49516)
+2025-07-21 00:43:07,787 - VideoServer - INFO - Sent video list to client
+2025-07-21 00:43:12,281 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 00:43:12,401 - VideoServer - INFO - Sent segment 0 (128231 bytes)
+2025-07-21 00:43:36,721 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 00:43:36,721 - VideoServer - INFO - Sent segment 0 (128231 bytes)
+2025-07-21 00:46:13,837 - VideoServer - INFO - Shutting down server...
+2025-07-21 00:46:13,838 - VideoServer - INFO - Server stopped
+2025-07-21 00:47:04,273 - VideoServer - INFO - Video server initialized with white background video (300s)
+2025-07-21 00:47:04,275 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 00:47:08,584 - VideoServer - INFO - New connection from ('127.0.0.1', 49524)
+2025-07-21 00:47:08,584 - VideoServer - INFO - Sent video list to client
+2025-07-21 00:47:09,693 - VideoServer - INFO - New connection from ('127.0.0.1', 49525)
+2025-07-21 00:47:09,693 - VideoServer - INFO - Sent video list to client
+2025-07-21 00:47:11,286 - VideoServer - INFO - New connection from ('127.0.0.1', 49526)
+2025-07-21 00:47:11,286 - VideoServer - INFO - Sent video list to client
+2025-07-21 00:47:14,398 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 00:47:14,512 - VideoServer - INFO - Sent segment 0 (128231 bytes)
+2025-07-21 00:48:40,775 - VideoServer - INFO - New connection from ('127.0.0.1', 49532)
+2025-07-21 00:48:40,778 - VideoServer - INFO - Sent video list to client
+2025-07-21 00:48:43,027 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 00:48:43,028 - VideoServer - INFO - Sent segment 0 (128231 bytes)
+2025-07-21 00:48:59,688 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 00:48:59,688 - VideoServer - INFO - Sent segment 0 (128231 bytes)
+2025-07-21 00:50:05,525 - VideoServer - INFO - New connection from ('127.0.0.1', 49534)
+2025-07-21 00:50:05,525 - VideoServer - INFO - Sent video list to client
+2025-07-21 00:50:07,524 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 00:50:07,524 - VideoServer - INFO - Sent segment 0 (128231 bytes)
+2025-07-21 00:50:12,679 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-21 00:50:12,778 - VideoServer - INFO - Sent segment 1 (128231 bytes)
+2025-07-21 00:50:12,822 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-21 00:50:12,920 - VideoServer - INFO - Sent segment 2 (128231 bytes)
+2025-07-21 00:50:12,962 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-21 00:50:13,059 - VideoServer - INFO - Sent segment 3 (128231 bytes)
+2025-07-21 00:50:13,091 - VideoServer - INFO - Request for video 1, segment 4, quality 0
+2025-07-21 00:50:13,189 - VideoServer - INFO - Sent segment 4 (128231 bytes)
+2025-07-21 00:50:23,212 - VideoServer - INFO - Request for video 1, segment 5, quality 0
+2025-07-21 00:50:23,315 - VideoServer - INFO - Sent segment 5 (128231 bytes)
+2025-07-21 00:50:33,337 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-21 00:50:33,446 - VideoServer - INFO - Sent segment 6 (128231 bytes)
+2025-07-21 00:50:43,468 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-21 00:50:43,586 - VideoServer - INFO - Sent segment 7 (128231 bytes)
+2025-07-21 00:50:53,607 - VideoServer - INFO - Request for video 1, segment 8, quality 0
+2025-07-21 00:50:53,722 - VideoServer - INFO - Sent segment 8 (128231 bytes)
+2025-07-21 00:51:03,741 - VideoServer - INFO - Request for video 1, segment 9, quality 0
+2025-07-21 00:51:03,841 - VideoServer - INFO - Sent segment 9 (128231 bytes)
+2025-07-21 00:51:13,930 - VideoServer - INFO - Request for video 1, segment 10, quality 0
+2025-07-21 00:51:14,037 - VideoServer - INFO - Sent segment 10 (128231 bytes)
+2025-07-21 00:51:24,104 - VideoServer - INFO - Request for video 1, segment 11, quality 0
+2025-07-21 00:51:24,215 - VideoServer - INFO - Sent segment 11 (128231 bytes)
+2025-07-21 00:51:34,337 - VideoServer - INFO - Request for video 1, segment 12, quality 0
+2025-07-21 00:51:34,449 - VideoServer - INFO - Sent segment 12 (128231 bytes)
+2025-07-21 00:51:44,572 - VideoServer - INFO - Request for video 1, segment 13, quality 0
+2025-07-21 00:51:44,675 - VideoServer - INFO - Sent segment 13 (128231 bytes)
+2025-07-21 00:51:54,776 - VideoServer - INFO - Request for video 1, segment 14, quality 0
+2025-07-21 00:51:54,884 - VideoServer - INFO - Sent segment 14 (128231 bytes)
+2025-07-21 00:52:04,978 - VideoServer - INFO - Request for video 1, segment 15, quality 0
+2025-07-21 00:52:05,099 - VideoServer - INFO - Sent segment 15 (128231 bytes)
+2025-07-21 00:52:15,203 - VideoServer - INFO - Request for video 1, segment 16, quality 0
+2025-07-21 00:52:15,305 - VideoServer - INFO - Sent segment 16 (128231 bytes)
+2025-07-21 00:52:25,399 - VideoServer - INFO - Request for video 1, segment 17, quality 0
+2025-07-21 00:52:25,519 - VideoServer - INFO - Sent segment 17 (128231 bytes)
+2025-07-21 00:52:35,610 - VideoServer - INFO - Request for video 1, segment 18, quality 0
+2025-07-21 00:52:35,708 - VideoServer - INFO - Sent segment 18 (128231 bytes)
+2025-07-21 00:52:45,811 - VideoServer - INFO - Request for video 1, segment 19, quality 0
+2025-07-21 00:52:45,925 - VideoServer - INFO - Sent segment 19 (128231 bytes)
+2025-07-21 00:52:56,055 - VideoServer - INFO - Request for video 1, segment 20, quality 0
+2025-07-21 00:52:56,163 - VideoServer - INFO - Sent segment 20 (128231 bytes)
+2025-07-21 00:53:06,341 - VideoServer - INFO - Request for video 1, segment 21, quality 0
+2025-07-21 00:53:06,456 - VideoServer - INFO - Sent segment 21 (128231 bytes)
+2025-07-21 00:53:16,549 - VideoServer - INFO - Request for video 1, segment 22, quality 0
+2025-07-21 00:53:16,660 - VideoServer - INFO - Sent segment 22 (128231 bytes)
+2025-07-21 00:53:26,786 - VideoServer - INFO - Request for video 1, segment 23, quality 0
+2025-07-21 00:53:26,910 - VideoServer - INFO - Sent segment 23 (128231 bytes)
+2025-07-21 00:53:37,010 - VideoServer - INFO - Request for video 1, segment 24, quality 0
+2025-07-21 00:53:37,131 - VideoServer - INFO - Sent segment 24 (128231 bytes)
+2025-07-21 00:53:47,250 - VideoServer - INFO - Request for video 1, segment 25, quality 0
+2025-07-21 00:53:47,364 - VideoServer - INFO - Sent segment 25 (128231 bytes)
+2025-07-21 00:53:57,457 - VideoServer - INFO - Request for video 1, segment 26, quality 0
+2025-07-21 00:53:57,589 - VideoServer - INFO - Sent segment 26 (128231 bytes)
+2025-07-21 00:54:07,669 - VideoServer - INFO - Request for video 1, segment 27, quality 0
+2025-07-21 00:54:07,777 - VideoServer - INFO - Sent segment 27 (128231 bytes)
+2025-07-21 00:54:17,861 - VideoServer - INFO - Request for video 1, segment 28, quality 0
+2025-07-21 00:54:17,975 - VideoServer - INFO - Sent segment 28 (128231 bytes)
+2025-07-21 00:54:28,052 - VideoServer - INFO - Request for video 1, segment 29, quality 0
+2025-07-21 00:54:28,156 - VideoServer - INFO - Sent segment 29 (128231 bytes)
+2025-07-21 00:55:46,612 - VideoServer - INFO - Shutting down server...
+2025-07-21 00:55:46,613 - VideoServer - INFO - Server stopped
+2025-07-21 00:55:51,567 - VideoServer - INFO - Video server initialized with white background video (300s)
+2025-07-21 00:55:51,568 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 00:55:57,951 - VideoServer - INFO - New connection from ('127.0.0.1', 49555)
+2025-07-21 00:55:57,951 - VideoServer - INFO - Sent video list to client
+2025-07-21 00:55:59,942 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 00:56:00,061 - VideoServer - INFO - Sent segment 0 (128231 bytes)
+2025-07-21 00:56:10,240 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-21 00:56:10,343 - VideoServer - INFO - Sent segment 1 (128231 bytes)
+2025-07-21 00:56:26,667 - VideoServer - INFO - Shutting down server...
+2025-07-21 00:56:26,667 - VideoServer - INFO - Server stopped
+2025-07-21 00:58:25,009 - VideoServer - INFO - Video server initialized with white background video (300s)
+2025-07-21 00:58:25,011 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 00:58:30,260 - VideoServer - INFO - New connection from ('127.0.0.1', 49560)
+2025-07-21 00:58:30,261 - VideoServer - INFO - Sent video list to client
+2025-07-21 00:58:33,083 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 00:58:33,194 - VideoServer - INFO - Sent segment 0 (128231 bytes)
+2025-07-21 00:58:43,361 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-21 00:58:43,464 - VideoServer - INFO - Sent segment 1 (128231 bytes)
+2025-07-21 00:59:18,621 - VideoServer - INFO - New connection from ('127.0.0.1', 49561)
+2025-07-21 00:59:18,622 - VideoServer - INFO - Sent video list to client
+2025-07-21 00:59:20,617 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 00:59:20,618 - VideoServer - INFO - Sent segment 0 (128231 bytes)
+2025-07-21 00:59:30,807 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-21 00:59:30,807 - VideoServer - INFO - Sent segment 1 (128231 bytes)
+2025-07-21 00:59:40,843 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-21 00:59:40,957 - VideoServer - INFO - Sent segment 2 (128231 bytes)
+2025-07-21 00:59:50,990 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-21 00:59:51,105 - VideoServer - INFO - Sent segment 3 (128231 bytes)
+2025-07-21 01:00:01,126 - VideoServer - INFO - Request for video 1, segment 4, quality 0
+2025-07-21 01:00:01,250 - VideoServer - INFO - Sent segment 4 (128231 bytes)
+2025-07-21 01:00:11,272 - VideoServer - INFO - Request for video 1, segment 5, quality 0
+2025-07-21 01:00:11,385 - VideoServer - INFO - Sent segment 5 (128231 bytes)
+2025-07-21 01:00:21,414 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-21 01:00:21,528 - VideoServer - INFO - Sent segment 6 (128231 bytes)
+2025-07-21 01:00:31,553 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-21 01:00:31,666 - VideoServer - INFO - Sent segment 7 (128231 bytes)
+2025-07-21 01:00:41,697 - VideoServer - INFO - Request for video 1, segment 8, quality 0
+2025-07-21 01:00:41,802 - VideoServer - INFO - Sent segment 8 (128231 bytes)
+2025-07-21 01:00:51,829 - VideoServer - INFO - Request for video 1, segment 9, quality 0
+2025-07-21 01:00:51,943 - VideoServer - INFO - Sent segment 9 (128231 bytes)
+2025-07-21 01:01:01,962 - VideoServer - INFO - Request for video 1, segment 10, quality 0
+2025-07-21 01:01:02,081 - VideoServer - INFO - Sent segment 10 (128231 bytes)
+2025-07-21 01:01:12,099 - VideoServer - INFO - Request for video 1, segment 11, quality 0
+2025-07-21 01:01:12,198 - VideoServer - INFO - Sent segment 11 (128231 bytes)
+2025-07-21 01:01:22,224 - VideoServer - INFO - Request for video 1, segment 12, quality 0
+2025-07-21 01:01:22,335 - VideoServer - INFO - Sent segment 12 (128231 bytes)
+2025-07-21 01:01:32,360 - VideoServer - INFO - Request for video 1, segment 13, quality 0
+2025-07-21 01:01:32,482 - VideoServer - INFO - Sent segment 13 (128231 bytes)
+2025-07-21 01:01:42,503 - VideoServer - INFO - Request for video 1, segment 14, quality 0
+2025-07-21 01:01:42,624 - VideoServer - INFO - Sent segment 14 (128231 bytes)
+2025-07-21 01:01:52,649 - VideoServer - INFO - Request for video 1, segment 15, quality 0
+2025-07-21 01:01:52,763 - VideoServer - INFO - Sent segment 15 (128231 bytes)
+2025-07-21 01:02:02,784 - VideoServer - INFO - Request for video 1, segment 16, quality 0
+2025-07-21 01:02:02,902 - VideoServer - INFO - Sent segment 16 (128231 bytes)
+2025-07-21 01:02:12,932 - VideoServer - INFO - Request for video 1, segment 17, quality 0
+2025-07-21 01:02:13,046 - VideoServer - INFO - Sent segment 17 (128231 bytes)
+2025-07-21 01:02:23,067 - VideoServer - INFO - Request for video 1, segment 18, quality 0
+2025-07-21 01:02:23,189 - VideoServer - INFO - Sent segment 18 (128231 bytes)
+2025-07-21 01:02:33,216 - VideoServer - INFO - Request for video 1, segment 19, quality 0
+2025-07-21 01:02:33,333 - VideoServer - INFO - Sent segment 19 (128231 bytes)
+2025-07-21 01:02:43,395 - VideoServer - INFO - Request for video 1, segment 20, quality 0
+2025-07-21 01:02:43,514 - VideoServer - INFO - Sent segment 20 (128231 bytes)
+2025-07-21 01:02:53,637 - VideoServer - INFO - Request for video 1, segment 21, quality 0
+2025-07-21 01:02:53,754 - VideoServer - INFO - Sent segment 21 (128231 bytes)
+2025-07-21 01:03:03,868 - VideoServer - INFO - Request for video 1, segment 22, quality 0
+2025-07-21 01:03:03,980 - VideoServer - INFO - Sent segment 22 (128231 bytes)
+2025-07-21 01:03:14,132 - VideoServer - INFO - Request for video 1, segment 23, quality 0
+2025-07-21 01:03:14,230 - VideoServer - INFO - Sent segment 23 (128231 bytes)
+2025-07-21 01:03:24,360 - VideoServer - INFO - Request for video 1, segment 24, quality 0
+2025-07-21 01:03:24,484 - VideoServer - INFO - Sent segment 24 (128231 bytes)
+2025-07-21 01:03:34,614 - VideoServer - INFO - Request for video 1, segment 25, quality 0
+2025-07-21 01:03:34,738 - VideoServer - INFO - Sent segment 25 (128231 bytes)
+2025-07-21 01:03:44,815 - VideoServer - INFO - Request for video 1, segment 26, quality 0
+2025-07-21 01:03:44,928 - VideoServer - INFO - Sent segment 26 (128231 bytes)
+2025-07-21 01:03:54,958 - VideoServer - INFO - Request for video 1, segment 27, quality 0
+2025-07-21 01:03:55,073 - VideoServer - INFO - Sent segment 27 (128231 bytes)
+2025-07-21 01:04:05,098 - VideoServer - INFO - Request for video 1, segment 28, quality 0
+2025-07-21 01:04:05,213 - VideoServer - INFO - Sent segment 28 (128231 bytes)
+2025-07-21 01:04:15,240 - VideoServer - INFO - Request for video 1, segment 29, quality 0
+2025-07-21 01:04:15,355 - VideoServer - INFO - Sent segment 29 (128231 bytes)
+2025-07-21 08:31:46,163 - VideoServer - INFO - Shutting down server...
+2025-07-21 08:31:46,164 - VideoServer - INFO - Server stopped
+2025-07-21 10:24:25,151 - VideoServer - INFO - Video server initialized with white background video (300s)
+2025-07-21 10:24:25,153 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 10:24:32,334 - VideoServer - INFO - New connection from ('127.0.0.1', 51031)
+2025-07-21 10:24:32,334 - VideoServer - INFO - Sent video list to client
+2025-07-21 10:24:36,070 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 10:24:36,131 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 10:24:39,285 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-21 10:24:39,333 - VideoServer - INFO - Sent segment 1 (40663 bytes)
+2025-07-21 10:24:42,355 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-21 10:24:42,403 - VideoServer - INFO - Sent segment 2 (40663 bytes)
+2025-07-21 10:24:45,430 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-21 10:24:45,477 - VideoServer - INFO - Sent segment 3 (40663 bytes)
+2025-07-21 10:24:48,498 - VideoServer - INFO - Request for video 1, segment 4, quality 0
+2025-07-21 10:24:48,549 - VideoServer - INFO - Sent segment 4 (40663 bytes)
+2025-07-21 10:24:51,573 - VideoServer - INFO - Request for video 1, segment 5, quality 0
+2025-07-21 10:24:51,609 - VideoServer - INFO - Sent segment 5 (40663 bytes)
+2025-07-21 10:24:54,636 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-21 10:24:54,684 - VideoServer - INFO - Sent segment 6 (40663 bytes)
+2025-07-21 10:24:57,704 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-21 10:24:57,748 - VideoServer - INFO - Sent segment 7 (40663 bytes)
+2025-07-21 10:25:00,770 - VideoServer - INFO - Request for video 1, segment 8, quality 0
+2025-07-21 10:25:00,809 - VideoServer - INFO - Sent segment 8 (40663 bytes)
+2025-07-21 10:25:03,834 - VideoServer - INFO - Request for video 1, segment 9, quality 0
+2025-07-21 10:25:03,869 - VideoServer - INFO - Sent segment 9 (40663 bytes)
+2025-07-21 10:25:06,890 - VideoServer - INFO - Request for video 1, segment 10, quality 0
+2025-07-21 10:25:06,940 - VideoServer - INFO - Sent segment 10 (40663 bytes)
+2025-07-21 10:25:09,963 - VideoServer - INFO - Request for video 1, segment 11, quality 0
+2025-07-21 10:25:10,003 - VideoServer - INFO - Sent segment 11 (40663 bytes)
+2025-07-21 10:25:13,023 - VideoServer - INFO - Request for video 1, segment 12, quality 0
+2025-07-21 10:25:13,054 - VideoServer - INFO - Sent segment 12 (40663 bytes)
+2025-07-21 10:25:16,079 - VideoServer - INFO - Request for video 1, segment 13, quality 0
+2025-07-21 10:25:16,121 - VideoServer - INFO - Sent segment 13 (40663 bytes)
+2025-07-21 10:25:19,146 - VideoServer - INFO - Request for video 1, segment 14, quality 0
+2025-07-21 10:25:19,190 - VideoServer - INFO - Sent segment 14 (40663 bytes)
+2025-07-21 10:25:22,213 - VideoServer - INFO - Request for video 1, segment 15, quality 0
+2025-07-21 10:25:22,250 - VideoServer - INFO - Sent segment 15 (40663 bytes)
+2025-07-21 10:25:25,312 - VideoServer - INFO - Request for video 1, segment 16, quality 0
+2025-07-21 10:25:25,354 - VideoServer - INFO - Sent segment 16 (40663 bytes)
+2025-07-21 10:25:28,395 - VideoServer - INFO - Request for video 1, segment 17, quality 0
+2025-07-21 10:25:28,436 - VideoServer - INFO - Sent segment 17 (40663 bytes)
+2025-07-21 10:25:31,476 - VideoServer - INFO - Request for video 1, segment 18, quality 0
+2025-07-21 10:25:31,515 - VideoServer - INFO - Sent segment 18 (40663 bytes)
+2025-07-21 10:25:34,553 - VideoServer - INFO - Request for video 1, segment 19, quality 0
+2025-07-21 10:25:34,595 - VideoServer - INFO - Sent segment 19 (40663 bytes)
+2025-07-21 10:25:37,619 - VideoServer - INFO - Request for video 1, segment 20, quality 0
+2025-07-21 10:25:37,655 - VideoServer - INFO - Sent segment 20 (40663 bytes)
+2025-07-21 10:25:40,677 - VideoServer - INFO - Request for video 1, segment 21, quality 0
+2025-07-21 10:25:40,713 - VideoServer - INFO - Sent segment 21 (40663 bytes)
+2025-07-21 10:25:43,736 - VideoServer - INFO - Request for video 1, segment 22, quality 0
+2025-07-21 10:25:43,789 - VideoServer - INFO - Sent segment 22 (40663 bytes)
+2025-07-21 10:25:46,813 - VideoServer - INFO - Request for video 1, segment 23, quality 0
+2025-07-21 10:25:46,859 - VideoServer - INFO - Sent segment 23 (40663 bytes)
+2025-07-21 10:25:49,886 - VideoServer - INFO - Request for video 1, segment 24, quality 0
+2025-07-21 10:25:49,934 - VideoServer - INFO - Sent segment 24 (40663 bytes)
+2025-07-21 10:25:52,956 - VideoServer - INFO - Request for video 1, segment 25, quality 0
+2025-07-21 10:25:53,009 - VideoServer - INFO - Sent segment 25 (40663 bytes)
+2025-07-21 10:25:56,029 - VideoServer - INFO - Request for video 1, segment 26, quality 0
+2025-07-21 10:25:56,060 - VideoServer - INFO - Sent segment 26 (40663 bytes)
+2025-07-21 10:25:59,084 - VideoServer - INFO - Request for video 1, segment 27, quality 0
+2025-07-21 10:25:59,130 - VideoServer - INFO - Sent segment 27 (40663 bytes)
+2025-07-21 10:26:01,411 - VideoServer - INFO - Shutting down server...
+2025-07-21 10:26:01,411 - VideoServer - INFO - Server stopped
+2025-07-21 10:49:59,945 - VideoServer - INFO - Video server initialized with white background video (300s)
+2025-07-21 10:49:59,948 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 10:50:13,593 - VideoServer - INFO - New connection from ('127.0.0.1', 51101)
+2025-07-21 10:50:13,593 - VideoServer - INFO - Sent video list to client
+2025-07-21 10:50:15,822 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 10:50:15,886 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 10:51:37,945 - VideoServer - INFO - Shutting down server...
+2025-07-21 10:51:37,945 - VideoServer - INFO - Server stopped
+2025-07-21 10:51:41,358 - VideoServer - INFO - Video server initialized with white background video (300s)
+2025-07-21 10:51:41,360 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 10:51:45,424 - VideoServer - INFO - New connection from ('127.0.0.1', 51103)
+2025-07-21 10:51:45,425 - VideoServer - INFO - Sent video list to client
+2025-07-21 10:51:48,630 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 10:51:48,681 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 10:52:08,870 - VideoServer - INFO - Shutting down server...
+2025-07-21 10:52:08,870 - VideoServer - INFO - Server stopped
+2025-07-21 11:00:10,530 - VideoServer - INFO - Video server initialized with white background video (300s)
+2025-07-21 11:00:10,533 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 11:00:40,490 - VideoServer - INFO - New connection from ('127.0.0.1', 51113)
+2025-07-21 11:00:40,490 - VideoServer - INFO - Sent video list to client
+2025-07-21 11:00:44,770 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 11:00:44,816 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 11:00:47,974 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-21 11:00:48,010 - VideoServer - INFO - Sent segment 1 (40663 bytes)
+2025-07-21 11:00:51,041 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-21 11:00:51,079 - VideoServer - INFO - Sent segment 2 (40663 bytes)
+2025-07-21 11:00:54,111 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-21 11:00:54,156 - VideoServer - INFO - Sent segment 3 (40663 bytes)
+2025-07-21 11:00:57,180 - VideoServer - INFO - Request for video 1, segment 4, quality 0
+2025-07-21 11:00:57,228 - VideoServer - INFO - Sent segment 4 (40663 bytes)
+2025-07-21 11:01:00,252 - VideoServer - INFO - Request for video 1, segment 5, quality 0
+2025-07-21 11:01:00,296 - VideoServer - INFO - Sent segment 5 (40663 bytes)
+2025-07-21 11:01:03,319 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-21 11:01:03,371 - VideoServer - INFO - Sent segment 6 (40663 bytes)
+2025-07-21 11:01:06,396 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-21 11:01:06,428 - VideoServer - INFO - Sent segment 7 (40663 bytes)
+2025-07-21 11:01:09,462 - VideoServer - INFO - Request for video 1, segment 8, quality 0
+2025-07-21 11:01:09,495 - VideoServer - INFO - Sent segment 8 (40663 bytes)
+2025-07-21 11:01:12,519 - VideoServer - INFO - Request for video 1, segment 9, quality 0
+2025-07-21 11:01:12,555 - VideoServer - INFO - Sent segment 9 (40663 bytes)
+2025-07-21 11:01:15,592 - VideoServer - INFO - Request for video 1, segment 10, quality 0
+2025-07-21 11:01:15,631 - VideoServer - INFO - Sent segment 10 (40663 bytes)
+2025-07-21 11:01:18,663 - VideoServer - INFO - Request for video 1, segment 11, quality 0
+2025-07-21 11:01:18,702 - VideoServer - INFO - Sent segment 11 (40663 bytes)
+2025-07-21 11:01:21,731 - VideoServer - INFO - Request for video 1, segment 12, quality 0
+2025-07-21 11:01:21,762 - VideoServer - INFO - Sent segment 12 (40663 bytes)
+2025-07-21 11:01:24,806 - VideoServer - INFO - Request for video 1, segment 13, quality 0
+2025-07-21 11:01:24,850 - VideoServer - INFO - Sent segment 13 (40663 bytes)
+2025-07-21 11:01:27,881 - VideoServer - INFO - Request for video 1, segment 14, quality 0
+2025-07-21 11:01:27,915 - VideoServer - INFO - Sent segment 14 (40663 bytes)
+2025-07-21 11:01:30,941 - VideoServer - INFO - Request for video 1, segment 15, quality 0
+2025-07-21 11:01:30,986 - VideoServer - INFO - Sent segment 15 (40663 bytes)
+2025-07-21 11:01:34,030 - VideoServer - INFO - Request for video 1, segment 16, quality 0
+2025-07-21 11:01:34,072 - VideoServer - INFO - Sent segment 16 (40663 bytes)
+2025-07-21 11:01:37,101 - VideoServer - INFO - Request for video 1, segment 17, quality 0
+2025-07-21 11:01:37,131 - VideoServer - INFO - Sent segment 17 (40663 bytes)
+2025-07-21 11:04:46,787 - VideoServer - INFO - Shutting down server...
+2025-07-21 11:04:46,788 - VideoServer - INFO - Server stopped
+2025-07-21 13:05:55,803 - VideoServer - INFO - Video server initialized with white background video (300s)
+2025-07-21 13:05:55,805 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 13:06:00,045 - VideoServer - INFO - New connection from ('127.0.0.1', 51512)
+2025-07-21 13:06:00,045 - VideoServer - INFO - Sent video list to client
+2025-07-21 13:06:01,461 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 13:06:01,519 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 13:06:21,552 - VideoServer - INFO - Shutting down server...
+2025-07-21 13:06:21,552 - VideoServer - INFO - Server stopped
+2025-07-21 15:06:18,880 - VideoServer - INFO - Video server initialized with white background video (300s)
+2025-07-21 15:06:18,883 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 15:06:23,357 - VideoServer - INFO - New connection from ('127.0.0.1', 53031)
+2025-07-21 15:06:23,357 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:06:26,198 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:26,261 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,338 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-21 15:06:29,370 - VideoServer - INFO - Sent segment 1 (40663 bytes)
+2025-07-21 15:06:29,371 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,371 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,380 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-21 15:06:29,380 - VideoServer - INFO - Sent segment 1 (40663 bytes)
+2025-07-21 15:06:29,381 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,381 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,391 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-21 15:06:29,391 - VideoServer - INFO - Sent segment 1 (40663 bytes)
+2025-07-21 15:06:29,391 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,392 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,399 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-21 15:06:29,429 - VideoServer - INFO - Sent segment 2 (40663 bytes)
+2025-07-21 15:06:29,430 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,430 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,438 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-21 15:06:29,468 - VideoServer - INFO - Sent segment 3 (40663 bytes)
+2025-07-21 15:06:29,469 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,469 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,476 - VideoServer - INFO - Request for video 1, segment 4, quality 0
+2025-07-21 15:06:29,506 - VideoServer - INFO - Sent segment 4 (40663 bytes)
+2025-07-21 15:06:29,506 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,506 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,514 - VideoServer - INFO - Request for video 1, segment 5, quality 0
+2025-07-21 15:06:29,544 - VideoServer - INFO - Sent segment 5 (40663 bytes)
+2025-07-21 15:06:29,545 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,545 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,553 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-21 15:06:29,583 - VideoServer - INFO - Sent segment 6 (40663 bytes)
+2025-07-21 15:06:29,584 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,584 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,591 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-21 15:06:29,591 - VideoServer - INFO - Sent segment 6 (40663 bytes)
+2025-07-21 15:06:29,592 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,592 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,599 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-21 15:06:29,599 - VideoServer - INFO - Sent segment 6 (40663 bytes)
+2025-07-21 15:06:29,599 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,599 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,609 - VideoServer - INFO - Request for video 1, segment 6, quality 0
+2025-07-21 15:06:29,609 - VideoServer - INFO - Sent segment 6 (40663 bytes)
+2025-07-21 15:06:29,609 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,610 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,617 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-21 15:06:29,647 - VideoServer - INFO - Sent segment 7 (40663 bytes)
+2025-07-21 15:06:29,648 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,648 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,655 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-21 15:06:29,655 - VideoServer - INFO - Sent segment 7 (40663 bytes)
+2025-07-21 15:06:29,656 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,656 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,663 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-21 15:06:29,664 - VideoServer - INFO - Sent segment 7 (40663 bytes)
+2025-07-21 15:06:29,664 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,664 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,668 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-21 15:06:29,668 - VideoServer - INFO - Sent segment 7 (40663 bytes)
+2025-07-21 15:06:29,668 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,669 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,683 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-21 15:06:29,684 - VideoServer - INFO - Sent segment 7 (40663 bytes)
+2025-07-21 15:06:29,684 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,684 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,692 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-21 15:06:29,692 - VideoServer - INFO - Sent segment 7 (40663 bytes)
+2025-07-21 15:06:29,693 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,693 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:29,701 - VideoServer - INFO - Request for video 1, segment 7, quality 0
+2025-07-21 15:06:29,701 - VideoServer - INFO - Sent segment 7 (40663 bytes)
+2025-07-21 15:06:29,702 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-21 15:06:29,702 - VideoServer - INFO - Sent segment 0 (40663 bytes)
+2025-07-21 15:06:31,811 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-21 15:06:31,811 - VideoServer - INFO - Sent segment 1 (40663 bytes)
+2025-07-21 15:06:34,855 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-21 15:06:34,855 - VideoServer - INFO - Sent segment 2 (40663 bytes)
+2025-07-21 15:06:37,881 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-21 15:06:37,881 - VideoServer - INFO - Sent segment 3 (40663 bytes)
+2025-07-21 15:06:40,931 - VideoServer - INFO - Request for video 1, segment 4, quality 0
+2025-07-21 15:06:40,931 - VideoServer - INFO - Sent segment 4 (40663 bytes)
+2025-07-21 15:06:52,583 - VideoServer - WARNING - Unsupported command: 3
+2025-07-21 15:10:01,702 - VideoServer - INFO - Shutting down server...
+2025-07-21 15:10:01,702 - VideoServer - INFO - Server stopped
+2025-07-21 15:12:26,710 - VideoServer - INFO - Video server initialized with white background video (300s)
+2025-07-21 15:12:26,715 - VideoServer - INFO - Server started on localhost:12345
+2025-07-21 15:12:34,122 - VideoServer - INFO - New connection from ('127.0.0.1', 53043)
+2025-07-21 15:12:34,123 - VideoServer - INFO - Sent video list to client
+2025-07-21 15:12:42,985 - VideoServer - WARNING - Unsupported command: 3
+2025-07-21 15:15:05,359 - VideoServer - INFO - Shutting down server...
+2025-07-21 15:15:05,360 - VideoServer - INFO - Server stopped
