@@ -205,78 +205,56 @@ class NetworkClient:
             logger.error(f"Registration error: {str(e)}")
             return False
 
-    def upload_video(self, video_info, segments):
+    def upload_video(self, video_info, segments, progress_callback=None):
         if not self.token:
-            logger.error("No authentication token available")
             return False
 
         try:
-            # Prepare data
             token_bytes = self.token.encode('utf-8')
             title_bytes = video_info.title.encode('utf-8')
             desc_bytes = video_info.description.encode('utf-8')
+
+            # Calculate total size
             total_size = sum(len(segment) for segment in segments)
 
-            # Build header
-            header = (
-                    bytes([0x05]) +  # UPLOAD command
-                    struct.pack('!I', len(token_bytes)) + token_bytes +
-                    struct.pack('!I', len(title_bytes)) + title_bytes +
-                    struct.pack('!I', len(desc_bytes)) + desc_bytes +
-                    struct.pack('!Q', total_size)
-            )
+            # Send initial data
+            self._send_all(bytes([Protocol.UPLOAD]))
+            self._send_all(struct.pack('!I', len(token_bytes)) + token_bytes)
+            self._send_all(struct.pack('!I', len(title_bytes)) + title_bytes)
+            self._send_all(struct.pack('!I', len(desc_bytes)) + desc_bytes)
+            self._send_all(struct.pack('!Q', total_size))
 
-            # Send header
-            self._send_all(header)
-
-            # Send video data in segments
+            # Send segments with progress updates
+            sent_bytes = 0
             for segment in segments:
                 self._send_all(segment)
+                sent_bytes += len(segment)
 
-                # Wait for progress update
-                while True:
-                    response_header = self._recv_all(2)
-                    if not response_header:
-                        logger.error("Connection closed during upload")
-                        return False
+                # Calculate and report progress
+                progress = int((sent_bytes / total_size) * 100)
+                if progress_callback and not progress_callback(progress):
+                    logger.info("Upload canceled by user")
+                    return False
 
-                    response_type = response_header[0]
-                    if response_type == 0x00:  # Progress update
-                        progress = response_header[1]
-                        logger.debug(f"Upload progress: {progress}%")
-                        break
-                    elif response_type == 0x01:  # Error
-                        logger.error("Server reported upload error")
-                        return False
-                    else:
-                        logger.error(f"Unexpected response type: {response_type}")
-                        return False
+                # Wait for server progress confirmation
+                response = self._recv_all(2)
+                if not response or response[0] != Protocol.UPLOAD_PROGRESS:
+                    logger.error("Invalid progress response from server")
+                    return False
 
             # Get final response
-            response_header = self._recv_all(1)
-            if not response_header:
-                logger.error("No final response from server")
+            response = self._recv_all(5)
+            if not response or response[0] != Protocol.UPLOAD_SUCCESS:
+                logger.error("Upload failed")
                 return False
 
-            response_type = response_header[0]
-            if response_type == 0x02:  # Success
-                video_id_bytes = self._recv_all(4)
-                if not video_id_bytes or len(video_id_bytes) != 4:
-                    logger.error("Invalid video ID received")
-                    return False
-                video_id = struct.unpack('!I', video_id_bytes)[0]
-                logger.info(f"Video uploaded successfully, ID: {video_id}")
-                return video_id
-            elif response_type == 0x01:  # Error
-                logger.error("Server rejected the upload")
-                return False
-            else:
-                logger.error(f"Unexpected final response: {response_type}")
-                return False
+            video_id = struct.unpack('!I', response[1:5])[0]
+            return video_id
 
         except Exception as e:
             logger.error(f"Error uploading video: {str(e)}", exc_info=True)
             return False
+
 
     def get_user_videos(self):
         if not self.token:

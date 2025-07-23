@@ -3,8 +3,8 @@ from PyQt5.QtWidgets import (QHBoxLayout, QVBoxLayout, QWidget, QPushButton,
                              QDialogButtonBox, QFrame, QLineEdit, QFormLayout,
                              QScrollArea, QListWidgetItem, QMessageBox,
                              QComboBox, QProgressBar, QToolButton, QFileDialog,
-                             QTextEdit)
-from PyQt5.QtCore import Qt, QSize
+                             QTextEdit, QProgressDialog, QCheckBox)
+from PyQt5.QtCore import Qt, QSize, QCoreApplication
 from PyQt5.QtGui import QPalette, QColor, QIcon, QFont
 import os
 
@@ -341,29 +341,45 @@ class UploadDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setWindowTitle("Загрузить видео")
-        self.setFixedSize(400, 250)
+        self.setFixedSize(500, 300)
 
+        self.setup_ui()
+        self.file_path = None
+
+    def setup_ui(self):
         layout = QVBoxLayout(self)
 
+        # Форма для ввода данных
         form = QFormLayout()
 
+        # Поле для названия
         self.title_edit = QLineEdit()
-        self.title_edit.setPlaceholderText("Название видео")
+        self.title_edit.setPlaceholderText("Введите название видео")
+        form.addRow("Название:", self.title_edit)
 
+        # Поле для описания
         self.desc_edit = QTextEdit()
-        self.desc_edit.setPlaceholderText("Описание видео")
+        self.desc_edit.setPlaceholderText("Введите описание видео")
         self.desc_edit.setMaximumHeight(80)
+        form.addRow("Описание:", self.desc_edit)
 
+        # Выбор файла
         self.file_button = QPushButton("Выбрать файл")
         self.file_button.clicked.connect(self.select_file)
         self.file_label = QLabel("Файл не выбран")
-
-        form.addRow("Название:", self.title_edit)
-        form.addRow("Описание:", self.desc_edit)
         form.addRow("Видеофайл:", self.file_button)
         form.addRow("", self.file_label)
 
-        buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        # Настройки приватности
+        self.public_check = QCheckBox("Сделать видео публичным")
+        self.public_check.setChecked(True)
+        form.addRow("Видимость:", self.public_check)
+
+        # Кнопки OK/Cancel
+        buttons = QDialogButtonBox(
+            QDialogButtonBox.Ok | QDialogButtonBox.Cancel,
+            Qt.Horizontal, self
+        )
         buttons.accepted.connect(self.validate)
         buttons.rejected.connect(self.reject)
 
@@ -371,31 +387,95 @@ class UploadDialog(QDialog):
         layout.addWidget(buttons)
 
     def select_file(self):
+        """Выбор видеофайла для загрузки"""
         file, _ = QFileDialog.getOpenFileName(
             self,
             "Выберите видеофайл",
             "",
-            "Видео (*.mp4 *.avi *.mov)"
+            "Видео (*.mp4 *.avi *.mov *.mkv);;Все файлы (*)"
         )
+
         if file:
-            self.file_label.setText(os.path.basename(file))
             self.file_path = file
+            self.file_label.setText(os.path.basename(file))
+
+            # Автоматически заполняем название, если оно пустое
+            if not self.title_edit.text().strip():
+                base = os.path.splitext(os.path.basename(file))[0]
+                self.title_edit.setText(base)
 
     def validate(self):
+        """Проверка введенных данных перед отправкой"""
+        errors = []
+
         if not self.title_edit.text().strip():
-            QMessageBox.warning(self, "Ошибка", "Введите название видео")
-            return
-        if not hasattr(self, 'file_path'):
-            QMessageBox.warning(self, "Ошибка", "Выберите видеофайл")
-            return
-        self.accept()
+            errors.append("Введите название видео")
+
+        if not self.file_path:
+            errors.append("Выберите видеофайл")
+        elif not os.path.exists(self.file_path):
+            errors.append("Выбранный файл не существует")
+
+        if errors:
+            QMessageBox.warning(
+                self,
+                "Ошибка ввода",
+                "\n".join(errors)
+            )
+        else:
+            self.accept()
 
     def get_video_info(self):
-        return type('VideoInfo', (), {
-            'title': self.title_edit.text(),
-            'description': self.desc_edit.toPlainText(),
-            'file_path': self.file_path
-        })
+        """Возвращает информацию о видео для загрузки"""
+
+        class VideoInfo:
+            def __init__(self, title, description, file_path, is_public):
+                self.title = title
+                self.description = description
+                self.file_path = file_path
+                self.is_public = is_public
+
+        return VideoInfo(
+            self.title_edit.text().strip(),
+            self.desc_edit.toPlainText().strip(),
+            self.file_path,
+            self.public_check.isChecked()
+        )
+    @staticmethod
+    def get_upload_info(parent=None):
+        """Статический метод для создания диалога и получения данных"""
+        dialog = UploadDialog(parent)
+        result = dialog.exec_()
+
+        if result == QDialog.Accepted:
+            return dialog.get_video_info()
+        return None
+
+
+class UploadProgressDialog(QProgressDialog):
+    """Диалог для отображения прогресса загрузки"""
+
+    def __init__(self, parent=None):
+        super().__init__(
+            "Загрузка видео на сервер...",
+            "Отменить",
+            0, 100,
+            parent
+        )
+        self.setWindowTitle("Загрузка видео")
+        self.setWindowModality(Qt.WindowModal)
+        self.setMinimumDuration(0)
+        self.setAutoReset(False)
+        self.setAutoClose(False)
+
+    def update_progress(self, value, text=None):
+        """Обновляет прогресс загрузки"""
+        self.setValue(value)
+        if text:
+            self.setLabelText(text)
+        QCoreApplication.processEvents()
+
+
 
 
 class EditVideoDialog(QDialog):

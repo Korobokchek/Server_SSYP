@@ -1,5 +1,7 @@
-from PyQt5.QtCore import QTimer, QUrl
-from PyQt5.QtWidgets import QMessageBox, QDialog, QShortcut, QApplication
+import sys
+
+from PyQt5.QtCore import QTimer, QUrl, Qt
+from PyQt5.QtWidgets import QMessageBox, QDialog, QShortcut, QApplication, QProgressDialog
 from PyQt5.QtGui import QKeySequence
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 from .network import NetworkClient
@@ -67,19 +69,20 @@ class VideoClient:
         self.escape_shortcut = QShortcut(QKeySequence("Escape"), self.ui.main_widget)
         self.escape_shortcut.activated.connect(self.exit_fullscreen)
 
-    def toggle_fullscreen(self):
-        if self.ui.main_widget.window().isFullScreen():
-            self.exit_fullscreen()
-        else:
-            self.enter_fullscreen()
 
     def enter_fullscreen(self):
         self.ui.main_widget.window().showFullScreen()
-        self.player.setFullScreen(True)
+        # Для Mac OS нужно скрыть менюбар
+        if sys.platform == 'darwin':
+            self.ui.main_widget.window().setWindowFlags(Qt.Window | Qt.FramelessWindowHint)
+            self.ui.main_widget.window().show()
 
     def exit_fullscreen(self):
         self.ui.main_widget.window().showNormal()
-        self.player.setFullScreen(False)
+        # Восстанавливаем стандартные флаги для Mac OS
+        if sys.platform == 'darwin':
+            self.ui.main_widget.window().setWindowFlags(Qt.Window)
+            self.ui.main_widget.window().show()
 
     def connect_to_server(self):
         try:
@@ -184,58 +187,7 @@ class VideoClient:
                     f"Длительность: {self.format_duration(video_info.segment_amount * video_info.segment_length)}"
                 )
 
-    def handle_video_upload(self, video_info):
-        try:
-            if not hasattr(video_info, 'file_path'):
-                QMessageBox.warning(self.ui.main_widget, "Ошибка", "Файл не выбран")
-                return
 
-            # Чтение файла и разбиение на сегменты
-            segment_length = 10  # seconds per segment
-            with open(video_info.file_path, 'rb') as f:
-                video_data = f.read()
-
-            # Простая сегментация - не работает пока :)
-            segment_size = len(video_data) // 10
-            segments = [video_data[i:i + segment_size] for i in range(0, len(video_data), segment_size)]
-
-            video_info_obj = VideoInfo(
-                segment_amount=len(segments),
-                segment_length=segment_length,
-                max_quality=0,
-                author=self.username,
-                title=video_info.title,
-                description=video_info.description
-            )
-
-            success = self.network.upload_video(video_info_obj, segments)
-            if success:
-                QMessageBox.information(self.ui.main_widget, "Успех",
-                                        f"Видео '{video_info.title}' успешно загружено")
-                self.load_user_videos()
-            else:
-                QMessageBox.critical(self.ui.main_widget, "Ошибка",
-                                     "Не удалось загрузить видео")
-        except Exception as e:
-            QMessageBox.critical(self.ui.main_widget, "Ошибка",
-                                 f"Не удалось загрузить видео: {str(e)}")
-            logger.error(f"Upload error: {str(e)}")
-
-    def edit_video_info(self, video_id, title, description):
-        try:
-            success = self.network.edit_video(video_id, title, description)
-            if success:
-                QMessageBox.information(self.ui.main_widget, "Успех",
-                                        "Информация о видео обновлена")
-                self.load_user_videos()
-                self.load_video_list()
-            else:
-                QMessageBox.critical(self.ui.main_widget, "Ошибка",
-                                     "Не удалось обновить информацию о видео")
-        except Exception as e:
-            QMessageBox.critical(self.ui.main_widget, "Ошибка",
-                                 f"Ошибка при обновлении видео: {str(e)}")
-            logger.error(f"Edit video error: {str(e)}")
 
     def format_duration(self, seconds):
         return str(timedelta(seconds=seconds))
@@ -280,17 +232,24 @@ class VideoClient:
 
         try:
             self.current_segment = 0
+            self.next_segment_data = None  # Для буферизации следующего сегмента
             self.ui.status_label.setText(f"Загрузка сегмента {self.current_segment + 1}/{self.total_segments}...")
 
-            # Даем интерфейсу обновиться
+            # Обновляем интерфейс перед загрузкой
             QApplication.processEvents()
 
+            # Загружаем первый сегмент
             segment_data = self.network.get_video_segment(self.current_video_id, self.current_segment, 0)
 
             if segment_data:
                 logger.info(f"Получен сегмент {self.current_segment}, размер: {len(segment_data)} байт")
                 self.player.play_segment(segment_data)
                 self.player.start_playback(self.current_video_id, self.segment_length, self.total_segments)
+
+                # Начинаем буферизацию следующего сегмента
+                if self.current_segment < self.total_segments - 1:
+                    self.buffer_next_segment()
+
                 self.position_timer.start(100)
                 self.ui.progress_slider.setMaximum(self.total_segments * self.segment_length * 1000)
                 self.ui.play_btn.setEnabled(False)
@@ -306,24 +265,148 @@ class VideoClient:
             logger.error(f"Ошибка воспроизведения видео: {str(e)}", exc_info=True)
             QMessageBox.critical(self.ui.main_widget, "Ошибка", f"Не удалось воспроизвести видео: {str(e)}")
 
+    def buffer_next_segment(self):
+        """Буферизация следующего сегмента видео"""
+        if not self.current_video_id or self.current_segment >= self.total_segments - 1:
+            return
+
+        next_segment = self.current_segment + 1
+        try:
+            self.next_segment_data = self.network.get_video_segment(
+                self.current_video_id,
+                next_segment,
+                0
+            )
+            logger.debug(f"Загружен в буфер сегмент {next_segment}")
+        except Exception as e:
+            logger.error(f"Ошибка буферизации: {str(e)}")
+
+    def toggle_fullscreen(self):
+        """Переключение полноэкранного режима только для плеера"""
+        if self.player.video_widget.isFullScreen():
+            self.player.video_widget.setFullScreen(False)
+            self.ui.main_widget.showNormal()
+        else:
+            self.ui.main_widget.hide()
+            self.player.video_widget.setFullScreen(True)
+
+    def handle_video_upload(self, video_info):
+        """Обработка загрузки видео с исправлениями"""
+        try:
+            if not hasattr(video_info, 'file_path') or not video_info.file_path:
+                QMessageBox.warning(self.ui.main_widget, "Ошибка", "Файл не выбран")
+                return
+
+            # Проверка существования файла
+            if not os.path.exists(video_info.file_path):
+                QMessageBox.warning(self.ui.main_widget, "Ошибка", "Выбранный файл не существует")
+                return
+
+            # Чтение файла
+            with open(video_info.file_path, 'rb') as f:
+                video_data = f.read()
+
+            # Сегментация по фиксированному размеру (1MB сегменты)
+            segment_size = 1024 * 1024  # 1MB
+            segments = [video_data[i:i + segment_size]
+                        for i in range(0, len(video_data), segment_size)]
+
+            # Создаем объект VideoInfo
+            video_info_obj = VideoInfo(
+                segment_amount=len(segments),
+                segment_length=10,  # 10 секунд на сегмент
+                max_quality=0,
+                author=self.username,
+                title=video_info.title,
+                description=video_info.description
+            )
+
+            # Создаем и показываем диалог прогресса
+            progress_dialog = QProgressDialog(
+                "Загрузка видео...", "Отмена", 0, 100, self.ui.main_widget)
+            progress_dialog.setWindowTitle("Загрузка")
+            progress_dialog.setWindowModality(Qt.WindowModal)
+            progress_dialog.show()
+
+            # Загружаем видео через сетевой модуль
+            def upload_callback(progress):
+                progress_dialog.setValue(progress)
+                QApplication.processEvents()  # Обновляем UI
+                return not progress_dialog.wasCanceled()
+
+            video_id = self.network.upload_video(video_info_obj, segments, upload_callback)
+            progress_dialog.close()
+
+            if video_id:
+                QMessageBox.information(
+                    self.ui.main_widget, "Успех",
+                    f"Видео '{video_info.title}' успешно загружено (ID: {video_id})")
+                self.load_user_videos()
+                self.load_video_list()
+            else:
+                QMessageBox.critical(
+                    self.ui.main_widget, "Ошибка",
+                    "Загрузка отменена или произошла ошибка")
+
+        except Exception as e:
+            QMessageBox.critical(
+                self.ui.main_widget, "Ошибка",
+                f"Не удалось загрузить видео: {str(e)}")
+            logger.error(f"Upload error: {str(e)}", exc_info=True)
+
+    def edit_video_info(self, video_id, title, description):
+        """Редактирование информации о видео"""
+        try:
+            if not title.strip():
+                QMessageBox.warning(self.ui.main_widget, "Ошибка", "Название не может быть пустым")
+                return False
+
+            success = self.network.edit_video(video_id, title, description)
+            if success:
+                QMessageBox.information(self.ui.main_widget, "Успех",
+                                        "Информация о видео обновлена")
+                self.load_user_videos()
+                self.load_video_list()
+                return True
+            else:
+                QMessageBox.critical(self.ui.main_widget, "Ошибка",
+                                     "Не удалось обновить информацию о видео")
+                return False
+        except Exception as e:
+            QMessageBox.critical(self.ui.main_widget, "Ошибка",
+                                 f"Ошибка при обновлении видео: {str(e)}")
+            logger.error(f"Edit video error: {str(e)}")
+            return False
+
     def handle_media_status(self, status):
+        """Обработка изменения статуса медиа с поддержкой буферизации"""
         if status == QMediaPlayer.EndOfMedia:
             if self.current_segment < self.total_segments - 1:
                 self.current_segment += 1
-                try:
-                    segment_data = self.network.get_video_segment(
-                        self.current_video_id,
-                        self.current_segment,
-                        0
-                    )
-                    if segment_data:
-                        self.player.play_segment(segment_data)
-                        self.ui.status_label.setText(
-                            f"Воспроизведение: сегмент {self.current_segment + 1}/{self.total_segments}")
-                except Exception as e:
-                    self.stop_video()
-                    QMessageBox.critical(self.ui.main_widget, "Ошибка",
-                                         f"Не удалось загрузить следующий сегмент: {str(e)}")
+
+                # Используем заранее загруженный сегмент, если он есть
+                if self.next_segment_data and self.current_segment == self.current_segment:
+                    self.player.play_segment(self.next_segment_data)
+                    self.next_segment_data = None
+                    self.buffer_next_segment()  # Буферизируем следующий сегмент
+                else:
+                    # Если буферизация не удалась, загружаем обычным способом
+                    try:
+                        segment_data = self.network.get_video_segment(
+                            self.current_video_id,
+                            self.current_segment,
+                            0
+                        )
+                        if segment_data:
+                            self.player.play_segment(segment_data)
+                            self.buffer_next_segment()
+                    except Exception as e:
+                        self.stop_video()
+                        QMessageBox.critical(self.ui.main_widget, "Ошибка",
+                                             f"Не удалось загрузить следующий сегмент: {str(e)}")
+
+                self.ui.status_label.setText(
+                    f"Воспроизведение: сегмент {self.current_segment + 1}/{self.total_segments}")
             else:
                 self.stop_video()
                 QMessageBox.information(
@@ -331,6 +414,8 @@ class VideoClient:
                     "Воспроизведение завершено",
                     "Видео закончилось"
                 )
+
+
 
     def update_position(self, position=None):
         if position is None:

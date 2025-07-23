@@ -1,4 +1,6 @@
 import sys
+
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtGui import QIcon
 from video_client.client import VideoClient
@@ -6,13 +8,14 @@ from video_client.logger import logger
 
 
 def main():
-    """Точка входа в приложение"""
     try:
         logger.info("Starting application")
         app = QApplication(sys.argv)
-
-        # Установка стиля Fusion (лучше выглядит в темном режиме)
         app.setStyle('Fusion')
+
+        if sys.platform == 'darwin':
+            app.setAttribute(Qt.AA_UseHighDpiPixmaps)
+            app.setAttribute(Qt.AA_EnableHighDpiScaling)
 
         window = QMainWindow()
         window.setWindowTitle("Youtube")

@@ -4203,3 +4203,626 @@ ValueError: Segment data too small: 33 bytes
 2025-07-22 21:58:59,304 - VideoClient - DEBUG - Received 4 bytes
 2025-07-22 21:58:59,304 - VideoClient - DEBUG - Received 28 bytes
 2025-07-22 21:58:59,304 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:08:43,300 - VideoClient - INFO - Starting application
+2025-07-22 23:08:43,459 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-22 23:08:43,474 - VideoClient - INFO - VideoPlayer initialized
+2025-07-22 23:08:43,508 - VideoClient - INFO - VideoClient initialized
+2025-07-22 23:08:43,603 - VideoClient - INFO - Application started successfully
+2025-07-22 23:08:50,598 - VideoClient - ERROR - Connection error: [Errno 61] Connection refused
+2025-07-22 23:08:51,714 - VideoClient - ERROR - Connection error: [Errno 61] Connection refused
+2025-07-22 23:08:55,086 - VideoClient - INFO - Starting application
+2025-07-22 23:08:55,188 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-22 23:08:55,193 - VideoClient - INFO - VideoPlayer initialized
+2025-07-22 23:08:55,213 - VideoClient - INFO - VideoClient initialized
+2025-07-22 23:08:55,290 - VideoClient - INFO - Application started successfully
+2025-07-22 23:08:56,969 - VideoClient - INFO - Successfully connected to server
+2025-07-22 23:08:56,970 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:08:56,970 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:56,971 - VideoClient - INFO - Receiving 2 videos
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 6 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 18 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 29 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:08:56,971 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:08:58,887 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:08:58,887 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:08:58,888 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:08:58,888 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:08:58,888 - VideoClient - INFO - Получен сегмент 0, размер: 128231 байт
+2025-07-22 23:08:58,896 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpold5tdni.mp4 (128231 bytes)
+2025-07-22 23:08:58,896 - VideoClient - INFO - Started playback of video 1
+2025-07-22 23:08:59,884 - VideoClient - INFO - Playback stopped
+2025-07-22 23:09:01,218 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:09:01,218 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:09:01,219 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:01,220 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:09:01,220 - VideoClient - INFO - Получен сегмент 0, размер: 128231 байт
+2025-07-22 23:09:01,222 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmp8gsl0gfa.mp4 (128231 bytes)
+2025-07-22 23:09:01,222 - VideoClient - INFO - Started playback of video 2
+2025-07-22 23:09:01,760 - VideoClient - INFO - Playback stopped
+2025-07-22 23:09:09,288 - VideoClient - DEBUG - Sent 24 bytes
+2025-07-22 23:09:09,290 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:09:09,290 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,290 - VideoClient - DEBUG - Received 64 bytes
+2025-07-22 23:09:09,290 - VideoClient - INFO - Login successful
+2025-07-22 23:09:09,290 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:09:09,290 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,290 - VideoClient - INFO - Receiving 2 videos
+2025-07-22 23:09:09,290 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,290 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,290 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 6 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 18 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 29 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:09:09,291 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Sent 68 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,292 - VideoClient - INFO - Receiving 1 user videos
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:09:09,292 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:09:15,927 - VideoClient - INFO - Starting application
+2025-07-22 23:09:16,033 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-22 23:09:16,040 - VideoClient - INFO - VideoPlayer initialized
+2025-07-22 23:09:16,061 - VideoClient - INFO - VideoClient initialized
+2025-07-22 23:09:16,142 - VideoClient - INFO - Application started successfully
+2025-07-22 23:15:36,283 - VideoClient - INFO - Successfully connected to server
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:36,286 - VideoClient - INFO - Receiving 2 videos
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 6 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 18 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 29 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:36,286 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:36,287 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:15:36,287 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:15:36,287 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:36,287 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:15:36,287 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:36,287 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:15:36,287 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:36,287 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:15:36,287 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:15:44,249 - VideoClient - DEBUG - Sent 24 bytes
+2025-07-22 23:15:44,250 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:15:44,251 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,251 - VideoClient - DEBUG - Received 64 bytes
+2025-07-22 23:15:44,252 - VideoClient - INFO - Login successful
+2025-07-22 23:15:44,252 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:15:44,252 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,252 - VideoClient - INFO - Receiving 2 videos
+2025-07-22 23:15:44,252 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 6 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 18 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 29 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:15:44,253 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Sent 68 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,254 - VideoClient - INFO - Receiving 1 user videos
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:15:44,254 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:21:11,617 - VideoClient - INFO - Starting application
+2025-07-22 23:21:11,754 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-22 23:21:11,766 - VideoClient - INFO - VideoPlayer initialized
+2025-07-22 23:21:11,799 - VideoClient - INFO - VideoClient initialized
+2025-07-22 23:21:11,887 - VideoClient - INFO - Application started successfully
+2025-07-22 23:21:20,270 - VideoClient - INFO - Starting application
+2025-07-22 23:21:20,367 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-22 23:21:20,373 - VideoClient - INFO - VideoPlayer initialized
+2025-07-22 23:21:20,393 - VideoClient - INFO - VideoClient initialized
+2025-07-22 23:21:20,476 - VideoClient - INFO - Application started successfully
+2025-07-22 23:21:22,172 - VideoClient - INFO - Successfully connected to server
+2025-07-22 23:21:22,172 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:22,173 - VideoClient - INFO - Receiving 2 videos
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 6 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 18 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 29 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:21:22,173 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:21:24,180 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:21:24,180 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:21:24,180 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:24,180 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:21:24,181 - VideoClient - INFO - Получен сегмент 0, размер: 128231 байт
+2025-07-22 23:21:24,190 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpjuirx5qi.mp4 (128231 bytes)
+2025-07-22 23:21:24,190 - VideoClient - INFO - Started playback of video 1
+2025-07-22 23:21:26,384 - VideoClient - INFO - Playback stopped
+2025-07-22 23:21:32,158 - VideoClient - DEBUG - Sent 24 bytes
+2025-07-22 23:21:32,159 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:21:32,159 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,159 - VideoClient - DEBUG - Received 64 bytes
+2025-07-22 23:21:32,159 - VideoClient - INFO - Login successful
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,160 - VideoClient - INFO - Receiving 2 videos
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 6 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 18 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 29 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,160 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Sent 68 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,161 - VideoClient - INFO - Receiving 1 user videos
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:21:32,161 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:22:11,838 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:22:11,839 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:22:11,840 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:22:11,840 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:22:11,840 - VideoClient - INFO - Получен сегмент 0, размер: 128231 байт
+2025-07-22 23:22:11,843 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpzj2fkqiy.mp4 (128231 bytes)
+2025-07-22 23:22:11,843 - VideoClient - INFO - Started playback of video 1
+2025-07-22 23:22:21,875 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:22:21,877 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:22:21,877 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:22:21,877 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:22:21,878 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpj9j4_lwi.mp4 (128231 bytes)
+2025-07-22 23:22:31,913 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:22:31,913 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:22:31,913 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:22:31,914 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:22:31,915 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpnr_nxhwg.mp4 (128231 bytes)
+2025-07-22 23:22:41,935 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:22:41,935 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:22:41,936 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:22:41,936 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:22:41,938 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmp623bnn32.mp4 (128231 bytes)
+2025-07-22 23:22:51,981 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:22:51,982 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:22:51,982 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:22:51,982 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:22:51,984 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpwoddah3i.mp4 (128231 bytes)
+2025-07-22 23:23:02,008 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:23:02,009 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:23:02,010 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:23:02,010 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:23:02,011 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmp5junj3dn.mp4 (128231 bytes)
+2025-07-22 23:23:12,031 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:23:12,031 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:23:12,031 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:23:12,032 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:23:12,033 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpp56qwysm.mp4 (128231 bytes)
+2025-07-22 23:23:22,056 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:23:22,057 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:23:22,058 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:23:22,058 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:23:22,061 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpbc0bs73m.mp4 (128231 bytes)
+2025-07-22 23:23:32,104 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:23:32,105 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:23:32,105 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:23:32,106 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:23:32,108 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmp16bls9tx.mp4 (128231 bytes)
+2025-07-22 23:23:42,238 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:23:42,241 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:23:42,243 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:23:42,243 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:23:42,251 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpc70m39jt.mp4 (128231 bytes)
+2025-07-22 23:23:52,349 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:23:52,349 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:23:52,350 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:23:52,350 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:23:52,352 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpf_wt30xf.mp4 (128231 bytes)
+2025-07-22 23:24:02,423 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:24:02,425 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:24:02,425 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:24:02,426 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:24:02,427 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpqe7fl29n.mp4 (128231 bytes)
+2025-07-22 23:24:09,582 - VideoClient - INFO - Disconnected from server
+2025-07-22 23:24:09,584 - VideoClient - INFO - Playback stopped
+2025-07-22 23:30:27,691 - VideoClient - INFO - Starting application
+2025-07-22 23:30:27,831 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-22 23:30:27,842 - VideoClient - INFO - VideoPlayer initialized
+2025-07-22 23:30:27,872 - VideoClient - INFO - VideoClient initialized
+2025-07-22 23:30:27,956 - VideoClient - INFO - Application started successfully
+2025-07-22 23:30:29,484 - VideoClient - INFO - Successfully connected to server
+2025-07-22 23:30:29,485 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:30:29,485 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:29,485 - VideoClient - INFO - Receiving 2 videos
+2025-07-22 23:30:29,485 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:29,485 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:29,485 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:30:29,485 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:30:29,485 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:29,485 - VideoClient - DEBUG - Received 6 bytes
+2025-07-22 23:30:29,485 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 18 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 29 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:30:29,486 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:30:39,675 - VideoClient - DEBUG - Sent 24 bytes
+2025-07-22 23:30:39,675 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:30:39,675 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,675 - VideoClient - DEBUG - Received 64 bytes
+2025-07-22 23:30:39,675 - VideoClient - INFO - Login successful
+2025-07-22 23:30:39,675 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:30:39,675 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,676 - VideoClient - INFO - Receiving 2 videos
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 6 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 18 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 29 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,676 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Sent 68 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,677 - VideoClient - INFO - Receiving 1 user videos
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:30:39,677 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:31:10,360 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:31:10,361 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:31:10,362 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:10,362 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:31:10,362 - VideoClient - INFO - Получен сегмент 0, размер: 128231 байт
+2025-07-22 23:31:10,371 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpgqii6dpi.mp4 (128231 bytes)
+2025-07-22 23:31:10,371 - VideoClient - INFO - Started playback of video 1
+2025-07-22 23:31:10,371 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:31:10,371 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:31:10,372 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:10,372 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:31:10,372 - VideoClient - DEBUG - Загружен в буфер сегмент 1
+2025-07-22 23:31:20,521 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmp2f64d0i2.mp4 (128231 bytes)
+2025-07-22 23:31:20,522 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:31:20,522 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:31:20,522 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:20,523 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:31:20,523 - VideoClient - DEBUG - Загружен в буфер сегмент 2
+2025-07-22 23:31:40,506 - VideoClient - INFO - Starting application
+2025-07-22 23:31:40,609 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-22 23:31:40,616 - VideoClient - INFO - VideoPlayer initialized
+2025-07-22 23:31:40,636 - VideoClient - INFO - VideoClient initialized
+2025-07-22 23:31:40,715 - VideoClient - INFO - Application started successfully
+2025-07-22 23:31:44,392 - VideoClient - INFO - Successfully connected to server
+2025-07-22 23:31:44,393 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:44,394 - VideoClient - INFO - Receiving 2 videos
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 6 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 18 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 29 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 1 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 5 bytes
+2025-07-22 23:31:44,394 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:44,395 - VideoClient - DEBUG - Received 19 bytes
+2025-07-22 23:31:44,395 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:44,395 - VideoClient - DEBUG - Received 28 bytes
+2025-07-22 23:31:44,395 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-22 23:31:46,563 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:31:46,564 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:31:46,564 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:46,565 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:31:46,565 - VideoClient - INFO - Получен сегмент 0, размер: 128231 байт
+2025-07-22 23:31:46,572 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmptwdcescw.mp4 (128231 bytes)
+2025-07-22 23:31:46,572 - VideoClient - INFO - Started playback of video 1
+2025-07-22 23:31:46,572 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:31:46,572 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:31:46,572 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:46,573 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:31:46,573 - VideoClient - DEBUG - Загружен в буфер сегмент 1
+2025-07-22 23:31:56,724 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpgdx0w4f9.mp4 (128231 bytes)
+2025-07-22 23:31:56,725 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-22 23:31:56,725 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-22 23:31:56,725 - VideoClient - DEBUG - Received 4 bytes
+2025-07-22 23:31:56,725 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-22 23:31:56,725 - VideoClient - DEBUG - Загружен в буфер сегмент 2
+2025-07-23 10:21:06,423 - VideoClient - INFO - Starting application
+2025-07-23 10:21:06,560 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-23 10:21:06,572 - VideoClient - INFO - VideoPlayer initialized
+2025-07-23 10:21:06,601 - VideoClient - INFO - VideoClient initialized
+2025-07-23 10:21:06,691 - VideoClient - INFO - Application started successfully
+2025-07-23 10:21:16,113 - VideoClient - INFO - Successfully connected to server
+2025-07-23 10:21:16,114 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-23 10:21:16,115 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:16,115 - VideoClient - INFO - Receiving 2 videos
+2025-07-23 10:21:16,115 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:16,115 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:16,115 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 10:21:16,115 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 10:21:16,115 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:16,115 - VideoClient - DEBUG - Received 6 bytes
+2025-07-23 10:21:16,115 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:16,115 - VideoClient - DEBUG - Received 18 bytes
+2025-07-23 10:21:16,115 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Received 29 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Received 5 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Received 19 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Received 28 bytes
+2025-07-23 10:21:16,116 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-23 10:21:18,552 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-23 10:21:18,552 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-23 10:21:18,553 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:18,553 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-23 10:21:18,553 - VideoClient - INFO - Получен сегмент 0, размер: 128231 байт
+2025-07-23 10:21:18,561 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmp5s86kixp.mp4 (128231 bytes)
+2025-07-23 10:21:18,562 - VideoClient - INFO - Started playback of video 1
+2025-07-23 10:21:18,562 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-23 10:21:18,562 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-23 10:21:18,562 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:18,563 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-23 10:21:18,563 - VideoClient - DEBUG - Загружен в буфер сегмент 1
+2025-07-23 10:21:20,160 - VideoClient - INFO - Playback stopped
+2025-07-23 10:21:25,804 - VideoClient - DEBUG - Sent 24 bytes
+2025-07-23 10:21:25,804 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 10:21:25,805 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,805 - VideoClient - DEBUG - Received 64 bytes
+2025-07-23 10:21:25,805 - VideoClient - INFO - Login successful
+2025-07-23 10:21:25,805 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,806 - VideoClient - INFO - Receiving 2 videos
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 6 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 18 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 29 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 5 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 19 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,806 - VideoClient - DEBUG - Received 28 bytes
+2025-07-23 10:21:25,807 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-23 10:21:25,807 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-23 10:21:25,807 - VideoClient - DEBUG - Sent 68 bytes
+2025-07-23 10:21:25,807 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,807 - VideoClient - INFO - Receiving 1 user videos
+2025-07-23 10:21:25,807 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,807 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,807 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 10:21:25,807 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 10:21:25,807 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,807 - VideoClient - DEBUG - Received 5 bytes
+2025-07-23 10:21:25,807 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,808 - VideoClient - DEBUG - Received 19 bytes
+2025-07-23 10:21:25,808 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 10:21:25,808 - VideoClient - DEBUG - Received 28 bytes
+2025-07-23 10:21:25,808 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-23 11:11:14,955 - VideoClient - INFO - Starting application
+2025-07-23 11:11:15,080 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-23 11:11:15,095 - VideoClient - INFO - VideoPlayer initialized
+2025-07-23 11:11:15,125 - VideoClient - INFO - VideoClient initialized
+2025-07-23 11:11:15,208 - VideoClient - INFO - Application started successfully
+2025-07-23 11:11:20,338 - VideoClient - INFO - Successfully connected to server
+2025-07-23 11:11:20,338 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-23 11:11:20,366 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:11:20,366 - VideoClient - INFO - Receiving 0 videos
+2025-07-23 11:13:56,412 - VideoClient - INFO - Starting application
+2025-07-23 11:13:56,526 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-23 11:13:56,533 - VideoClient - INFO - VideoPlayer initialized
+2025-07-23 11:13:56,552 - VideoClient - INFO - VideoClient initialized
+2025-07-23 11:13:56,627 - VideoClient - INFO - Application started successfully
+2025-07-23 11:13:57,894 - VideoClient - ERROR - Connection error: [Errno 61] Connection refused
+2025-07-23 11:14:03,762 - VideoClient - INFO - Successfully connected to server
+2025-07-23 11:14:03,763 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-23 11:14:03,764 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:03,764 - VideoClient - INFO - Receiving 2 videos
+2025-07-23 11:14:03,764 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:03,764 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:03,764 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 11:14:03,764 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 11:14:03,764 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:03,764 - VideoClient - DEBUG - Received 6 bytes
+2025-07-23 11:14:03,764 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 18 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 29 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Created VideoInfo: White Video (300s) by system
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 1 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 5 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 19 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Received 28 bytes
+2025-07-23 11:14:03,765 - VideoClient - DEBUG - Created VideoInfo: Gosha's Video (60s) by gosha
+2025-07-23 11:14:05,809 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-23 11:14:05,809 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-23 11:14:05,810 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:05,810 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-23 11:14:05,810 - VideoClient - INFO - Получен сегмент 0, размер: 128231 байт
+2025-07-23 11:14:05,819 - VideoClient - INFO - Playing segment from /var/folders/44/7vw9d4w56bjckp4pg353rc0w0000gn/T/tmpwm6mq084.mp4 (128231 bytes)
+2025-07-23 11:14:05,819 - VideoClient - INFO - Started playback of video 1
+2025-07-23 11:14:05,819 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-23 11:14:05,819 - VideoClient - DEBUG - Sent 9 bytes
+2025-07-23 11:14:05,819 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:14:05,820 - VideoClient - DEBUG - Received 128231 bytes
+2025-07-23 11:14:05,820 - VideoClient - DEBUG - Загружен в буфер сегмент 1
+2025-07-23 11:52:27,283 - VideoClient - INFO - Starting application
+2025-07-23 11:52:27,412 - VideoClient - INFO - Initializing NetworkClient for localhost:12345
+2025-07-23 11:52:27,422 - VideoClient - INFO - VideoPlayer initialized
+2025-07-23 11:52:27,450 - VideoClient - INFO - VideoClient initialized
+2025-07-23 11:52:27,564 - VideoClient - INFO - Application started successfully
+2025-07-23 11:52:47,703 - VideoClient - INFO - Successfully connected to server
+2025-07-23 11:52:47,704 - VideoClient - DEBUG - Sent 1 bytes
+2025-07-23 11:52:47,731 - VideoClient - DEBUG - Received 4 bytes
+2025-07-23 11:52:47,732 - VideoClient - INFO - Receiving 0 videos
+2025-07-23 11:53:02,428 - VideoClient - DEBUG - Sent 24 bytes
