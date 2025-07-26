@@ -1,13 +1,15 @@
 from PyQt5.QtWidgets import (QHBoxLayout, QVBoxLayout, QWidget, QPushButton,
-                             QSlider, QLabel, QListWidget, QDialog,
-                             QDialogButtonBox, QFrame, QLineEdit, QFormLayout,
-                             QScrollArea, QListWidgetItem, QMessageBox,
-                             QComboBox, QProgressBar, QToolButton, QFileDialog,
-                             QTextEdit, QProgressDialog, QCheckBox)
+                            QSlider, QLabel, QListWidget, QDialog,
+                            QDialogButtonBox, QFrame, QLineEdit, QFormLayout,
+                            QScrollArea, QListWidgetItem, QMessageBox,
+                            QComboBox, QProgressBar, QToolButton, QFileDialog,
+                            QTextEdit, QProgressDialog, QCheckBox, QTabWidget)
 from PyQt5.QtCore import Qt, QSize, QCoreApplication
 from PyQt5.QtGui import QPalette, QColor, QIcon, QFont
 import os
+import logging
 
+logger = logging.getLogger(__name__)
 
 class DarkPalette(QPalette):
     def __init__(self):
@@ -26,12 +28,13 @@ class DarkPalette(QPalette):
         self.setColor(QPalette.Highlight, QColor(42, 130, 218))
         self.setColor(QPalette.HighlightedText, Qt.black)
 
-
 class VideoPlayerUI:
     def __init__(self):
         self.main_widget = QWidget()
         self.setup_ui()
         self.apply_dark_theme()
+        self.is_authenticated = False
+        self.network = Network()
 
     def apply_dark_theme(self):
         palette = DarkPalette()
@@ -97,6 +100,17 @@ class VideoPlayerUI:
             QProgressBar::chunk {
                 background-color: #2a82da;
             }
+            QTabWidget::pane {
+                border: 1px solid #444;
+            }
+            QTabBar::tab {
+                background: #353535;
+                padding: 5px;
+                border: 1px solid #444;
+            }
+            QTabBar::tab:selected {
+                background: #454545;
+            }
         """)
 
     def setup_ui(self):
@@ -109,16 +123,18 @@ class VideoPlayerUI:
         connection_panel = QWidget()
         connection_layout = QHBoxLayout(connection_panel)
 
-        self.server_input = QLineEdit("localhost:12345")
+        self.server_input = QLineEdit("localhost:8080")
         self.connect_btn = QPushButton("Подключиться")
         self.disconnect_btn = QPushButton("Отключиться")
         self.login_btn = QPushButton("Войти")
         self.register_btn = QPushButton("Регистрация")
         self.account_btn = QPushButton("Мой аккаунт")
+        self.channel_btn = QPushButton("Каналы")
 
         self.disconnect_btn.setEnabled(False)
         self.login_btn.setEnabled(False)
         self.account_btn.setEnabled(False)
+        self.channel_btn.setEnabled(False)
 
         connection_layout.addWidget(QLabel("Сервер:"))
         connection_layout.addWidget(self.server_input)
@@ -127,6 +143,7 @@ class VideoPlayerUI:
         connection_layout.addWidget(self.login_btn)
         connection_layout.addWidget(self.register_btn)
         connection_layout.addWidget(self.account_btn)
+        connection_layout.addWidget(self.channel_btn)
         connection_layout.addStretch()
 
         main_layout.addWidget(connection_panel)
@@ -175,7 +192,7 @@ class VideoPlayerUI:
         self.video_list_widget = QListWidget()
         self.video_list_widget.setFlow(QListWidget.LeftToRight)
         self.video_list_widget.setWrapping(False)
-        self.video_list_widget.setFixedHeight(120)
+        self.video_list_widget.setFixedHeight(75)
         video_list_layout.addWidget(self.video_list_widget)
 
         main_layout.addWidget(video_list_panel)
@@ -185,17 +202,18 @@ class VideoPlayerUI:
         main_layout.addWidget(self.status_label)
 
     def set_auth_state(self, authenticated):
-        """Обновляет состояние элементов интерфейса при авторизации/выходе"""
+        """Update UI elements based on authentication state"""
+        self.is_authenticated = authenticated
         self.login_btn.setEnabled(True)
         self.register_btn.setEnabled(not authenticated)
         self.account_btn.setEnabled(authenticated)
+        self.channel_btn.setEnabled(authenticated)
         if authenticated:
             self.login_btn.setText("Выйти")
             self.video_list_label.setText("Доступные видео (авторизован)")
         else:
             self.login_btn.setText("Войти")
             self.video_list_label.setText("Доступные видео")
-
 
 class LoginDialog(QDialog):
     def __init__(self, parent=None):
@@ -222,7 +240,6 @@ class LoginDialog(QDialog):
 
     def get_credentials(self):
         return self.username_input.text(), self.password_input.text()
-
 
 class RegisterDialog(QDialog):
     def __init__(self, parent=None):
@@ -270,10 +287,33 @@ class UserAccountDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setWindowTitle("Мой аккаунт")
-        self.setFixedSize(500, 400)
-        self.parent_widget = parent  # Сохраняем ссылку на родительский виджет
+        self.setFixedSize(600, 500)
+        self.parent_widget = parent
 
         layout = QVBoxLayout(self)
+
+        # Создаем вкладки
+        self.tabs = QTabWidget()
+
+        # Вкладка с видео
+        self.video_tab = QWidget()
+        self.setup_video_tab()
+        self.tabs.addTab(self.video_tab, "Мои видео")
+
+        # Вкладка с каналами
+        self.channel_tab = QWidget()
+        self.setup_channel_tab()
+        self.tabs.addTab(self.channel_tab, "Мои каналы")
+
+        layout.addWidget(self.tabs)
+
+        buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttons.accepted.connect(self.accept)
+        buttons.rejected.connect(self.reject)
+        layout.addWidget(buttons)
+
+    def setup_video_tab(self):
+        layout = QVBoxLayout(self.video_tab)
 
         # Buttons panel
         buttons_panel = QWidget()
@@ -290,8 +330,153 @@ class UserAccountDialog(QDialog):
         layout.addWidget(buttons_panel)
 
         self.video_list = QListWidget()
-        self.video_list.itemSelectionChanged.connect(self.on_selection_changed)
+        self.video_list.itemSelectionChanged.connect(self.on_video_selection_changed)
         layout.addWidget(self.video_list, stretch=1)
+
+        # Connect signals
+        self.upload_btn.clicked.connect(self.handle_upload)
+        self.edit_btn.clicked.connect(self.handle_edit)
+
+    def setup_channel_tab(self):
+        layout = QVBoxLayout(self.channel_tab)
+
+        # Buttons panel
+        buttons_panel = QWidget()
+        buttons_layout = QHBoxLayout(buttons_panel)
+
+        self.create_channel_btn = QPushButton("Создать канал")
+        self.channel_info_btn = QPushButton("Информация")
+        self.channel_info_btn.setEnabled(False)
+
+        buttons_layout.addWidget(self.create_channel_btn)
+        buttons_layout.addWidget(self.channel_info_btn)
+        buttons_layout.addStretch()
+
+        layout.addWidget(buttons_panel)
+
+        self.channel_list = QListWidget()
+        self.channel_list.itemSelectionChanged.connect(self.on_channel_selection_changed)
+        self.channel_list.itemDoubleClicked.connect(self.on_channel_double_click)
+        layout.addWidget(self.channel_list, stretch=1)
+
+        # Connect signals
+        self.create_channel_btn.clicked.connect(self.handle_create_channel)
+        self.channel_info_btn.clicked.connect(self.handle_channel_info)
+
+    def on_video_selection_changed(self):
+        self.edit_btn.setEnabled(len(self.video_list.selectedItems()) > 0)
+
+    def on_channel_selection_changed(self):
+        self.channel_info_btn.setEnabled(len(self.channel_list.selectedItems()) > 0)
+
+    def on_channel_double_click(self, item):
+        channel_id = item.data(Qt.UserRole)
+        if hasattr(self.parent_widget, 'load_channel_videos'):
+            self.parent_widget.load_channel_videos(channel_id)
+        self.accept()
+
+    def handle_upload(self):
+        """Handle video upload by delegating to parent widget"""
+        if hasattr(self.parent_widget, 'handle_video_upload'):
+            upload_dialog = UploadDialog(self)
+            if upload_dialog.exec_() == QDialog.Accepted:
+                video_info = upload_dialog.get_video_info()
+                self.parent_widget.handle_video_upload(video_info)
+
+    def handle_edit(self):
+        """Handle video editing by delegating to parent widget"""
+        selected = self.video_list.selectedItems()
+        if not selected:
+            return
+
+        if hasattr(self.parent_widget, 'edit_video_info'):
+            video_id = selected[0].data(Qt.UserRole)
+            video_info = selected[0].data(Qt.UserRole + 1)  # Assuming video_info is stored as additional data
+
+            edit_dialog = EditVideoDialog(self, video_info.title, video_info.description)
+            if edit_dialog.exec_() == QDialog.Accepted:
+                title, description = edit_dialog.get_video_info()
+                self.parent_widget.edit_video_info(video_id, title, description)
+
+    def handle_create_channel(self):
+        """Handle channel creation by delegating to parent widget"""
+        if hasattr(self.parent_widget, 'create_channel'):
+            self.parent_widget.create_channel()
+
+    def handle_channel_info(self):
+        """Handle channel info display by delegating to parent widget"""
+        selected = self.channel_list.selectedItems()
+        if not selected:
+            return
+
+        channel_id = selected[0].data(Qt.UserRole)
+        if hasattr(self.parent_widget, 'show_channel_info'):
+            self.parent_widget.show_channel_info(channel_id)
+
+    def set_videos(self, videos):
+        """Set the list of user videos"""
+        self.video_list.clear()
+        for video_id, video_info in videos:
+            item = QListWidgetItem(f"{video_id}: {video_info.title}")
+            item.setData(Qt.UserRole, video_id)
+            item.setData(Qt.UserRole + 1, video_info)  # Store video_info for editing
+            self.video_list.addItem(item)
+
+    def set_channels(self, channels):
+        """Set the list of user channels"""
+        self.channel_list.clear()
+        for channel_id, channel_info in channels:
+            item = QListWidgetItem(f"{channel_id}: {channel_info.name}")
+            item.setData(Qt.UserRole, channel_id)
+            self.channel_list.addItem(item)
+
+    def get_selected_video(self):
+        """Get the currently selected video"""
+        selected_items = self.video_list.selectedItems()
+        if selected_items:
+            return (
+                selected_items[0].data(Qt.UserRole),
+                selected_items[0].data(Qt.UserRole + 1)  # video_info
+            )
+        return None
+
+    def get_selected_channel(self):
+        """Get the currently selected channel"""
+        selected_items = self.channel_list.selectedItems()
+        if selected_items:
+            return selected_items[0].data(Qt.UserRole)
+        return None
+
+class ChannelDialog(QDialog):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle("Каналы")
+        self.setFixedSize(500, 400)
+        self.parent_widget = parent
+
+        layout = QVBoxLayout(self)
+
+        # Buttons panel
+        buttons_panel = QWidget()
+        buttons_layout = QHBoxLayout(buttons_panel)
+
+        self.create_btn = QPushButton("Создать канал")
+        self.subscribe_btn = QPushButton("Подписаться")
+        self.subscribe_btn.setEnabled(False)
+        self.info_btn = QPushButton("Информация")
+        self.info_btn.setEnabled(False)
+
+        buttons_layout.addWidget(self.create_btn)
+        buttons_layout.addWidget(self.subscribe_btn)
+        buttons_layout.addWidget(self.info_btn)
+        buttons_layout.addStretch()
+
+        layout.addWidget(buttons_panel)
+
+        self.channel_list = QListWidget()
+        self.channel_list.itemSelectionChanged.connect(self.on_selection_changed)
+        self.channel_list.itemDoubleClicked.connect(self.on_channel_double_click)
+        layout.addWidget(self.channel_list, stretch=1)
 
         buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
         buttons.accepted.connect(self.accept)
@@ -299,43 +484,124 @@ class UserAccountDialog(QDialog):
         layout.addWidget(buttons)
 
         # Connect signals
-        self.upload_btn.clicked.connect(self.show_upload_dialog)
-        self.edit_btn.clicked.connect(self.show_edit_dialog)
+        self.create_btn.clicked.connect(self.show_create_channel_dialog)
+        self.subscribe_btn.clicked.connect(self.handle_subscription)
+        self.info_btn.clicked.connect(self.show_channel_info)
 
     def on_selection_changed(self):
-        self.edit_btn.setEnabled(len(self.video_list.selectedItems()) > 0)
+        has_selection = len(self.channel_list.selectedItems()) > 0
+        self.subscribe_btn.setEnabled(has_selection)
+        self.info_btn.setEnabled(has_selection)
 
-    def show_upload_dialog(self):
-        upload_dialog = UploadDialog(self)
-        if upload_dialog.exec_() == QDialog.Accepted:
-            if hasattr(self.parent_widget, 'handle_video_upload'):
-                self.parent_widget.handle_video_upload(upload_dialog.get_video_info())
+    def on_channel_double_click(self, item):
+        """Handle double click on channel item"""
+        channel_id = item.data(Qt.UserRole)
+        if hasattr(self.parent_widget, 'load_channel_videos'):
+            self.parent_widget.load_channel_videos(channel_id)
+        self.accept()
 
-    def show_edit_dialog(self):
-        selected = self.video_list.selectedItems()
+    def show_create_channel_dialog(self):
+        if hasattr(self.parent_widget, 'create_channel'):
+            self.parent_widget.create_channel()
+
+    def show_channel_info(self):
+        selected = self.channel_list.selectedItems()
         if not selected:
             return
 
-        video_id, video_info = selected[0].data(Qt.UserRole)
-        edit_dialog = EditVideoDialog(self, video_info.title, video_info.description)
-        if edit_dialog.exec_() == QDialog.Accepted:
-            new_title, new_description = edit_dialog.get_video_info()
-            if hasattr(self.parent_widget, 'edit_video_info'):
-                self.parent_widget.edit_video_info(video_id, new_title, new_description)
+        channel_id = selected[0].data(Qt.UserRole)
+        if hasattr(self.parent_widget, 'show_channel_info'):
+            self.parent_widget.show_channel_info(channel_id)
 
-    def set_videos(self, videos):
-        self.video_list.clear()
-        for video_id, video_info in videos:
-            item = QListWidgetItem(f"{video_id}: {video_info.title}")
-            item.setData(Qt.UserRole, (video_id, video_info))
-            self.video_list.addItem(item)
+    def handle_subscription(self):
+        selected = self.channel_list.selectedItems()
+        if not selected:
+            return
 
-    def get_selected_video(self):
-        selected_items = self.video_list.selectedItems()
+        channel_id = selected[0].data(Qt.UserRole)
+        if hasattr(self.parent_widget, 'subscribe_to_channel'):
+            self.parent_widget.subscribe_to_channel(channel_id)
+
+    def set_channels(self, channels):
+        self.channel_list.clear()
+        for channel_id, channel_info in channels:
+            item = QListWidgetItem(f"{channel_id}: {channel_info.name}")
+            item.setData(Qt.UserRole, channel_id)
+            self.channel_list.addItem(item)
+
+    def get_selected_channel(self):
+        selected_items = self.channel_list.selectedItems()
         if selected_items:
             return selected_items[0].data(Qt.UserRole)
         return None
 
+class ChannelInfoDialog(QDialog):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle("Информация о канале")
+        self.setFixedSize(400, 300)
+
+        layout = QVBoxLayout(self)
+
+        self.name_label = QLabel()
+        self.name_label.setStyleSheet("font-size: 16px; font-weight: bold;")
+        self.desc_label = QLabel()
+        self.desc_label.setWordWrap(True)
+        self.stats_label = QLabel()
+
+        layout.addWidget(self.name_label)
+        layout.addWidget(self.desc_label)
+        layout.addWidget(self.stats_label)
+        layout.addStretch()
+
+        buttons = QDialogButtonBox(QDialogButtonBox.Ok)
+        buttons.accepted.connect(self.accept)
+        layout.addWidget(buttons)
+
+    def set_channel_info(self, channel_info):
+        self.name_label.setText(channel_info.name)
+        self.desc_label.setText(channel_info.description)
+        self.stats_label.setText(
+            f"Подписчики: {channel_info.subscribers}\n"
+            f"Видео: {channel_info.video_amount}\n"
+            f"Владелец: {'Вы' if channel_info.owner else 'Другой пользователь'}"
+        )
+
+class CreateChannelDialog(QDialog):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle("Создать канал")
+        self.setFixedSize(400, 250)
+
+        layout = QVBoxLayout(self)
+
+        form = QFormLayout()
+
+        self.name_edit = QLineEdit()
+        self.name_edit.setPlaceholderText("Название канала")
+
+        self.desc_edit = QTextEdit()
+        self.desc_edit.setPlaceholderText("Описание канала")
+        self.desc_edit.setMaximumHeight(80)
+
+        form.addRow("Название:", self.name_edit)
+        form.addRow("Описание:", self.desc_edit)
+
+        buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttons.accepted.connect(self.validate)
+        buttons.rejected.connect(self.reject)
+
+        layout.addLayout(form)
+        layout.addWidget(buttons)
+
+    def validate(self):
+        if not self.name_edit.text().strip():
+            QMessageBox.warning(self, "Ошибка", "Введите название канала")
+            return
+        self.accept()
+
+    def get_channel_info(self):
+        return self.name_edit.text().strip(), self.desc_edit.toPlainText().strip()
 
 class UploadDialog(QDialog):
     def __init__(self, parent=None):
@@ -427,7 +693,6 @@ class UploadDialog(QDialog):
 
     def get_video_info(self):
         """Возвращает информацию о видео для загрузки"""
-
         class VideoInfo:
             def __init__(self, title, description, file_path, is_public):
                 self.title = title
@@ -441,42 +706,6 @@ class UploadDialog(QDialog):
             self.file_path,
             self.public_check.isChecked()
         )
-    @staticmethod
-    def get_upload_info(parent=None):
-        """Статический метод для создания диалога и получения данных"""
-        dialog = UploadDialog(parent)
-        result = dialog.exec_()
-
-        if result == QDialog.Accepted:
-            return dialog.get_video_info()
-        return None
-
-
-class UploadProgressDialog(QProgressDialog):
-    """Диалог для отображения прогресса загрузки"""
-
-    def __init__(self, parent=None):
-        super().__init__(
-            "Загрузка видео на сервер...",
-            "Отменить",
-            0, 100,
-            parent
-        )
-        self.setWindowTitle("Загрузка видео")
-        self.setWindowModality(Qt.WindowModal)
-        self.setMinimumDuration(0)
-        self.setAutoReset(False)
-        self.setAutoClose(False)
-
-    def update_progress(self, value, text=None):
-        """Обновляет прогресс загрузки"""
-        self.setValue(value)
-        if text:
-            self.setLabelText(text)
-        QCoreApplication.processEvents()
-
-
-
 
 class EditVideoDialog(QDialog):
     def __init__(self, parent=None, title="", description=""):
@@ -512,4 +741,11 @@ class EditVideoDialog(QDialog):
         self.accept()
 
     def get_video_info(self):
-        return self.title_edit.text(), self.desc_edit.toPlainText()
+        return self.title_edit.text().strip(), self.desc_edit.toPlainText().strip()
+
+class Network:
+    """Mock network class for demonstration"""
+    def create_channel(self, name, description):
+        # In a real implementation, this would make a network request
+        import random
+        return random.randint(1, 1000)  # Return random ID for demo

@@ -499,3 +499,20 @@
 2025-07-23 11:14:05,819 - VideoServer - INFO - Request for video 1, segment 1, quality 0
 2025-07-23 11:15:30,290 - VideoServer - INFO - Server stopped
 2025-07-23 11:15:30,290 - VideoServer - INFO - Server stopped
+2025-07-23 14:52:51,810 - VideoServer - INFO - Server started on localhost:12345
+2025-07-23 14:52:53,696 - VideoServer - INFO - New connection from ('127.0.0.1', 62045)
+2025-07-23 14:52:55,533 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-23 14:52:55,539 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-23 14:55:26,613 - VideoServer - INFO - Server stopped
+2025-07-23 14:55:26,613 - VideoServer - INFO - Server stopped
+2025-07-23 14:55:31,372 - VideoServer - INFO - Server started on localhost:12345
+2025-07-23 14:55:32,979 - VideoServer - INFO - New connection from ('127.0.0.1', 62064)
+2025-07-23 14:55:35,130 - VideoServer - INFO - Request for video 1, segment 0, quality 0
+2025-07-23 14:55:35,136 - VideoServer - INFO - Request for video 1, segment 1, quality 0
+2025-07-23 14:55:37,307 - VideoServer - INFO - Request for video 1, segment 2, quality 0
+2025-07-23 14:55:39,350 - VideoServer - INFO - Request for video 1, segment 3, quality 0
+2025-07-23 14:57:50,345 - VideoServer - INFO - Server stopped
+2025-07-23 14:57:50,345 - VideoServer - INFO - Server stopped
+2025-07-23 16:25:42,467 - VideoServer - INFO - Server started on localhost:12345
+2025-07-23 16:29:44,254 - VideoServer - INFO - Server stopped
+2025-07-23 16:29:44,254 - VideoServer - INFO - Server stopped
